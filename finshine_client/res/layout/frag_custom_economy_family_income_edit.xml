@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="家庭年度收支"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/table_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收入" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v"
+            android:visibility="gone" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" >
+        </View>
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="支出" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="本人收入" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <!-- android:background="@drawable/edit_empty_bg" -->
+
+                    <EditText
+                        android:id="@+id/income"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_family"
+                        android:nextFocusForward="@+id/et_family"
+                        android:nextFocusRight="@+id/et_family"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="家庭生活开销" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/livingCost"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_mateincome"
+                        android:nextFocusForward="@+id/et_mateincome"
+                        android:nextFocusRight="@+id/et_mateincome"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="配偶收入" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/spouseIncome"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_rentexpense"
+                        android:nextFocusForward="@+id/et_rentexpense"
+                        android:nextFocusRight="@+id/et_rentexpense"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="房屋支出" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/housExpense"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_bonus"
+                        android:nextFocusForward="@+id/et_bonus"
+                        android:nextFocusRight="@+id/et_bonus"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="年终奖金" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/endBonus"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_medical"
+                        android:nextFocusForward="@+id/et_medical"
+                        android:nextFocusRight="@+id/et_medical"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="医疗费" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/medicExpense"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_rent"
+                        android:nextFocusForward="@+id/et_rent"
+                        android:nextFocusRight="@+id/et_rent"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="房租收入" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/rental"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_children"
+                        android:nextFocusForward="@+id/et_children"
+                        android:nextFocusRight="@+id/et_children"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="子女教育费" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/eduExpense"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_deposit"
+                        android:nextFocusForward="@+id/et_deposit"
+                        android:nextFocusRight="@+id/et_deposit"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="存款债券利息" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/interest"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_insurance"
+                        android:nextFocusForward="@+id/et_insurance"
+                        android:nextFocusRight="@+id/et_insurance"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="保险费" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/insurance"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_dividend"
+                        android:nextFocusForward="@+id/et_dividend"
+                        android:nextFocusRight="@+id/et_dividend"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="股利、股息" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/dividends"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_travel"
+                        android:nextFocusForward="@+id/et_travel"
+                        android:nextFocusRight="@+id/et_travel"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="旅游费" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/travel"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_sortdividend"
+                        android:nextFocusForward="@+id/et_sortdividend"
+                        android:nextFocusRight="@+id/et_sortdividend"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="各类分红" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/otherDividends"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_maintenance"
+                        android:nextFocusForward="@+id/et_maintenance"
+                        android:nextFocusRight="@+id/et_maintenance"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="赡养费" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/alimony"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_fixedincome"
+                        android:nextFocusForward="@+id/et_fixedincome"
+                        android:nextFocusRight="@+id/et_fixedincome"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="其它固定收入" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/otherFixIncome"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_fixedexpense"
+                        android:nextFocusForward="@+id/et_fixedexpense"
+                        android:nextFocusRight="@+id/et_fixedexpense"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="其它固定支出" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/otherFixExpense"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_unfixedincome"
+                        android:nextFocusForward="@+id/et_unfixedincome"
+                        android:nextFocusRight="@+id/et_unfixedincome"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="其它不固定收入" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/otherUnfixIncome"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:nextFocusDown="@+id/et_unfixedexpense"
+                        android:nextFocusForward="@+id/et_unfixedexpense"
+                        android:nextFocusRight="@+id/et_unfixedexpense"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="其它不固定支出" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/otherUnfixExpense"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="收入合计" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/totalIncome"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="支出合计" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/totalExpenditure"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="18dp"
+                        android:text="每年结余（收入-支出）" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <EditText
+                        android:id="@+id/annualBalance"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:paddingLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/client_data_three_balance"
+                        style="@style/Txt16Gray808080"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/client_data_three_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:textColor="#838383"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/table_row_line" >
+                    </View>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/table_row_line" />
+            </TableLayout>
+
+            <!--
+                      TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="（此表所填均为税后金额   单位：元）"
+                     android:textColor="#838383" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/common_header" />
+
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/customer_market_collectinfo5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+           android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="风险偏好合同签订" 
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credent_obverse"
+                    android:layout_marginTop="20dp" />
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="上传合同照" 
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:text="请签署合同" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资产托管合同签订"
+                     android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credent_obverse" 
+                      android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="上传合同照"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:text="请签署合同" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        layout="@layout/common_foot_next_pre" />
+
+</RelativeLayout>

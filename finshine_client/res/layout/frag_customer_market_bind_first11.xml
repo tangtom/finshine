@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="尊敬的" />
+
+            <TextView
+                android:id="@+id/txtCsName"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘文超" />
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="由于您之前还未与理财师" />
+
+            <TextView
+                android:id="@+id/txtSalesName"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张诚" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定，请先提交绑定认证信息。" />
+
+            <TextView
+                style="@style/Txt12Redff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以下信息全部必填，一经绑定，不可修改" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="姓名:" />
+
+            <EditText
+                android:id="@+id/editName"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:paddingLeft="5dp"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="证件类型:" />
+
+            <Spinner
+                android:id="@+id/spinnerIdenfication"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/idenfication_type"
+                android:padding="5dp"
+                android:prompt="@string/sele_idenfication" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="证件号:" />
+
+            <EditText
+                android:id="@+id/idenficationNumber"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="证件有效期:" />
+
+            <EditText
+                android:id="@+id/btnDate"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:drawableRight="@drawable/ic_date"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="手机号:" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:text="验证码:" />
+
+            <EditText
+                android:id="@+id/etSmsVaerfication"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|left"
+                android:maxLength="6"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnGetVerfication"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="点击获取验证码" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/text_gray_bfbfbf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="证件照（正）" />
+
+            <ImageView
+                android:id="@+id/ivOposive"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/credent_photo" />
+
+            <Button
+                android:id="@+id/btnPositive"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:text="点击上传" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="证件照（反）" />
+
+            <ImageView
+                android:id="@+id/ivdefensive"
+               android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/credent_photo" />
+
+            <Button
+                android:id="@+id/btndefensive"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:text="点击上传" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="真实照片" />
+
+            <ImageView
+                android:id="@+id/csIcon"
+               android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/credent_photo" />
+
+            <Button
+                android:id="@+id/btnUploadIcon"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:text="上传照片" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

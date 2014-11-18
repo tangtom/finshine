@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/customer_market_collectinfo5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊敬的" />
+
+        <TextView
+            android:id="@+id/tvCustomName"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刘文超女士" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="：     (" />
+
+        <TextView
+            style="@style/Txt16Redff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下信息一经填写 将无法更改" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  )" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您确认进行" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=",并将履行线下合同签订义务" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtProductName"
+            android:text="资产委托人认购资产管理计划A类" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="份额：" />
+
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/etShareCount"
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_5corner_bg"
+                android:digits="1234567890"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万份" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="认购金额为：" />
+
+            <TextView
+                android:id="@+id/tvBuyMoney"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/digitToChinese"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万元(人民币 0万元整 )" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Txt20Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_item_orange"
+                android:gravity="fill_vertical"
+                android:padding="5dp"
+                android:text="  收益银行卡号"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银        行" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/shape_5corner_bg"
+                    android:id="@+id/bankName"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡        号" />
+
+                <EditText
+                    android:singleLine="true"
+                       android:paddingLeft="5dp"
+                    android:id="@+id/bankCode"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_5corner_bg"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="30" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivOposive"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/credent_positive" />
+
+            <Button
+                android:id="@+id/btnUploadOP"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="上传" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivdefensive"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/credent_obverse" />
+
+            <Button
+                android:id="@+id/btnUploadDe"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="上传" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_filter_condition" >
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:text="奖励佣金设置" />
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt16Redff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您将为产品" />
+
+        <TextView
+            android:id="@+id/text_product_name"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="众银1880000" />
+
+        <TextView
+            style="@style/Txt16Redff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置使用的奖励佣金券" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_second"
+        android:layout_width="wrap_content"
+        android:layout_height="22dip"
+        android:layout_below="@id/linear_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_commission"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/text_long_product_name"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="众银1880"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_list"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_below="@id/linear_second"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_use_commission"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dip"
+            android:divider="@null" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_list"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="共可获得奖励佣金比例" />
+
+            <TextView
+                android:id="@+id/text_total_proportion"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:text="3%" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Txt16Redff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="注：一经使用不可更改！" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonSure"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dip"
+                android:background="@color/background_gray_d0bd9c"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dip"
+                android:background="@color/background_gray_d0bd9c"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

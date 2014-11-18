@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff" >
+
+    <LinearLayout
+        android:id="@+id/lt"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/common_header" />
+
+        <LinearLayout
+            android:id="@+id/linPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+          <LinearLayout
+        android:layout_below="@+id/lt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnResign"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="重签" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="确定" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">闪融</string>
+    <string name="app_login">登录</string>
+    <string name="title_customer_management">客户</string>
+    <string name="title_product_management">产品</string>
+    <string name="title_product_choose">产品选择</string>
+    <string name="title_product_detail">产品详情</string>
+    <string name="title_add_target_customer">新增目标客户</string>
+    <string name="title_customer_marketing">交易</string>
+    <string name="title_prod_compare_detail">产品对比详情</string>
+    <string name="title_select">选择会面时间</string>
+    <string name="title_article_list">新闻列表</string>
+    <string name="title_gather_information">采集信息</string>
+    <string name="title_sign_contract">合同签订</string>
+    <string name="title_bind">绑定协议</string>
+    <string name="title_order_payment">订单支付</string>
+    <string name="title_order_result">交易结果</string>
+    <string name="label_bind">尊敬的%1$s,由于您之前还未与理财师%2$s绑定,</string>
+    <string name="title_find_target_customer">发现目标客户</string>
+    <string name="market_customer">营销机会</string>
+    <!-- 产品管理出现的中文字描述  by lihs 2014.5.13 -->
+    <string name="product_manager_default_sort">默认</string>
+    <string name="product_manager_publish_time">发行日期</string>
+    <string name="product_manager_ecpected_income">收益</string>
+    <string name="product_manager_commision">佣金</string>
+    <string name="product_manager_time_limit">期限</string>
+    <string name="product_manager_scale">规模</string>
+    <string name="product_manager_hotest">最热</string>
+    <string name="product_manager_input_product_name">请输入产品名称</string>
+    <string name="pubilish_term">发&#160;&#160;&#160;行&#160;&#160;&#160;期</string>
+    <string name="ecpected">期限: </string>
+    <string name="states">状态: </string>
+    <string name="start_invest_money">起投金额: </string>
+    <string name="reference_income">参考收益：</string>
+    <string name="category_type">类型：</string>
+    <string name="publisher_hobby">发行商偏好</string>
+    <string name="reset_filter_conditions">重置筛选条件</string>
+    <string name="be_lucky_bags">可用幸运包</string>
+    <string name="be_common_bags">可用通用包</string>
+    <string name="special_task">专有任务</string>
+    <string name="only_see_recommand">仅看推荐</string>
+    <string name="only_see_collections">仅看收藏</string>
+    <string name="already_overdue">显示已过期</string>
+    <string name="publisher_start_time">发行开始时间</string>
+    <string name="publisher_end_time">发行结束时间</string>
+    <string name="total_asset">资产总额</string>
+    <string name="invest_total_money">投资总额</string>
+    <string name="invest_times">投资次数</string>
+    <string name="fix_commision">固定佣金</string>
+    <string name="select_task_package">选择任务包</string>
+    <string name="task_description">任务说明</string>
+    <string name="accept_task">接受任务</string>
+    <string name="product_information">产品资料</string>
+    <string name="train_video">培训视频</string>
+    <string name="contact_customer">联系客服</string>
+    <string name="qulification_examin">资格考试</string>
+    <string name="product_introduction">产品名称</string>
+    <string name="marketing">营销</string>
+    <string name="order_share">预约份额</string>
+    <string name="idenfication">认&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;证</string>
+    <string name="product_highlight">产品亮点</string>
+    <string name="manager">管理人</string>
+    <string name="product_type">产品类型</string>
+    <string name="product_states">产品状态</string>
+    <string name="publish_date">发行日期</string>
+    <string name="product_scale">产品规模</string>
+    <string name="product_deadline">期限</string>
+    <string name="invest_income_rate">投资者参考收益率（年化）</string>
+    <string name="mark">备注</string>
+    <string name="buy_start_point">认购起点</string>
+    <string name="counter_party">交易对手</string>
+    <string name="money_useing">资金用途</string>
+    <string name="source_of_repayment">还款来源</string>
+    <string name="risk_control_measures">风险控制措施</string>
+    <string name="income_distribution_way">收益分配方式</string>
+    <string name="income_distribution_date">收益分配日</string>
+    <string name="product_code">产品代码 </string>
+    <string name="publisher_phone">发行商电话 </string>
+    <string name="publisher_prod">发行商</string>
+    <string name="publisher_email">发行商Email </string>
+    <string name="product_contacter">产品合同 </string>
+    <string name="invest_can_kao">投资者参考</string>
+    <string name="income_rate_by_year">收益率（年化）</string>
+    <string name="risk">风险</string>
+    <string name="all_product">所有产品</string>
+    <string name="intent_product">意向产品</string>
+    <string name="appointment">预约份额</string>
+    <string name="application_fees">应用佣金券</string>
+    <string name="application_feed">查看佣金券</string>
+    <string name="sales_live">销售实况</string>
+    <string name="gaol_customer">目标客户</string>
+    <string name="dividend">分红</string>
+    <string name="collected">收藏</string>
+    <string name="cancle_collected">取消收藏</string>
+    <string name="cm_base_info">基本信息</string>
+    <string name="cm_economy_info">经济状况</string>
+    <string name="cm_content_summary">联系纪要</string>
+    <string name="cm_invest_record">投资记录</string>
+    <string name="cm_invest_analyse">投资分析</string>
+    <string name="invest_deadline">投资期限</string>
+    <string name="invest_money">投资额</string>
+    <string name="invest_ecpected_income_rate">预期收益率</string>
+    <string name="query_commission_used">查看已使用佣金券</string>
+    <string name="dividendPerference">分红偏好</string>
+    <string name="profitPerference">收益偏好</string>
+    <string name="deadlinePerference">期限偏好</string>
+    <string name="investment">投资额</string>
+    <string name="investResource">投资来源</string>
+    <string name="startInvest">起投金额</string>
+    <string name="referenceIncome">参考收益</string>
+    <string name="purchaseReason">购买原因</string>
+    <string name="validity_date">证件有效期</string>
+    <string name="long_time">长期</string>
+    <string name="my_rebutation">我的信誉</string>
+
+    <!-- 搜索 -->
+    <string name="search_customer_name">请输入客户姓名</string>
+    <string name="search_product_name">请输入产品名称</string>
+
+    <!-- 营销模块 -->
+    <string name="customer_market_order_manager">订单管理</string>
+
+    <!-- 产品状态对应的列表 -->
+    <string-array name="product_states">
+        <item>全部</item>
+        <item>预约</item>
+        <item>预售</item>
+        <item>在售</item>
+        <item>封账</item>
+    </string-array>
+    <!-- 起投金额对应的列表 -->
+    <string-array name="product_start_invest_money">
+        <item>全部</item>
+        <item>5-100</item>
+        <item>101-300</item>
+        <item>300+</item>
+        <item>封账</item>
+    </string-array>
+
+    <!-- 参考收益对应的列表 -->
+    <string-array name="product_reference_income">
+        <item>全部</item>
+        <item>8%-9%</item>
+        <item>9%-10%</item>
+        <item>10%-12%</item>
+        <item>12%+</item>
+    </string-array>
+
+    <!-- 类型对应的列表 -->
+    <string-array name="product__type">
+        <item>资管类</item>
+        <item>基金类</item>
+        <item>信托类</item>
+    </string-array>
+
+    <!-- 信托，资管类型对应的列表 -->
+    <string-array name="product__affiance_type">
+        <item>政府平台</item>
+        <item>房地产</item>
+        <item>中小企业融资</item>
+        <item>P  E类</item>
+        <item>权益类</item>
+    </string-array>
+    <!-- 基金类型对应的列表  公募类，私募类 -->
+    <string-array name="product__fund_type">
+        <item>公募类</item>
+        <item>私募类</item>
+    </string-array>
+
+    <string name="buy_product">购买产品</string>
+    <string name="compared_product">产品对比</string>
+    <string name="load_data">正在加载数据</string>
+    <string name="title_market_collect_baseinfo">采集信息</string>
+    <string name="btn_cancle">取消</string>
+    <string name="btn_ok">确定</string>
+    <string name="alert">提醒</string>
+    <string name="set_internet_btn">网络设置</string>
+    <string name="can_not_connected_server">无法连接到服务器或网络，请检查网络</string>
+
+    <!-- test 测试客户营销接口 -->
+    <string name="query_bind_protecol">查询绑定协议</string>
+
+    <string-array name="cs_market">
+        <item>查询绑定协议 </item>
+        <item>获取合同信息 </item>
+        <item> 查询销售订单 </item>
+        <item>号码产生器 </item>
+        <item>客户营销首页统计 </item>
+        <item>订单查询list </item>
+        <item>根据理财师和客户查询历史订单 </item>
+        <item>获取营销首页客户记录 </item>
+        <item>取客户快的营销记录 </item>
+        <item>获取到期客户列表信息 </item>
+        <item>选定产品 </item>
+        <item>获取短信验证码 </item>
+        <item>上传绑定协议的附件 </item>
+        <item>绑定协议 </item>
+        <item>上传合同签名附件 </item>
+        <item> 绑定协议2 </item>
+        <item>上传合同签名附件 </item>
+        <item>合同签订 </item>
+        <item>订单支付凭证扫描附件 </item>
+        <item>订单支付 </item>
+        <item>下载附件 </item>
+        <item>删除绑定协议的附件 </item>
+        <item>删除合同的附件 </item>
+        <item>删除订单的附件  </item>
+        <item>获取客户快的营销记录2</item>
+        <item>查询营销记录 </item>
+        <item>上传头像 </item>
+        <item>下载头像 </item>
+    </string-array>
+    <!-- file download -->
+    <string name="file_download_finish">文件下载完成</string>
+    <string name="file_downloading">已开始下载，请到“我的下载”中查看</string>
+    <string name="file_downloaded">该文件已经下载过了</string>
+    <string name="ablum_selec">选择图片来源</string>
+    <string name="select_time">选择入境时间</string>
+    <string name="sele_national">选择国籍</string>
+    <string name="sele_idenfication">证件类型:</string>
+
+    <string-array name="select_icon">
+        <item>拍照 </item>
+        <item>从相册选择 </item>
+    </string-array>
+    <string-array name="select_vedio">
+        <item>录制 </item>
+        <item>从视频中选择 </item>
+    </string-array>
+    <!-- 证件类型 -->
+    <string-array name="idenfication_type">
+        <item>身份证</item>
+        <item>军官证</item>
+        <item>中国护照</item>
+        <item>士兵证</item>
+        <item>户口本</item>
+        <item>回乡证</item>
+        <item>港澳台通行证</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 购买原因   多选 -->
+    <string-array name="purchase_reason">
+        <item>亲友介绍</item>
+        <item>广告活动</item>
+        <item>收益率高</item>
+        <item>公司知名度</item>
+        <item>客户经理介绍</item>
+        <item>产品风险控</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 账单寄送方式 -->
+    <string-array name="purchase_send">
+        <item>E-mail</item>
+        <item>邮寄</item>
+        <item>不需要</item>
+    </string-array>
+    <!-- 交易类型 -->
+    <string-array name="purchase_type">
+        <item>认购</item>
+        <item>参与</item>
+    </string-array>
+    <string-array name="pay_status">
+        <item></item>
+        <item>未支付</item>
+        <item>支付确认中</item>
+        <item>已支付</item>
+    </string-array>
+    <string-array name="trade_status">
+        <item></item>
+        <item>审核中</item>
+        <item>购买成功</item>
+        <item>购买失败</item>
+    </string-array>
+
+    <string name="bank_title">选择银行</string>
+
+    <!--
+         <string-array name="bank_num">
+        <item>招商银行</item>
+        <item>工商银行</item>
+        <item>中国银行</item>
+        <item>农业银行</item>
+        <item>民生银行</item>
+        <item>交通银行</item>
+        <item>邮政银行</item>
+    </string-array>
+    -->
+
+    <string name="today">今天</string>
+    <string name="week">本周</string>
+    <string name="month">本月</string>
+
+    <!-- 我的积分 -->
+    <string name="pointer_sort_default">默认排序</string>
+    <string name="pointer_transaction_time">成交时间</string>
+    <string name="pointer_product_name">产品名称</string>
+    <string name="pointer_my_pointer">我的积分</string>
+    <string name="pointer_date">天</string>
+    <string name="pointer_month">月</string>
+    <string name="pointer_year">年</string>
+    <string name="user_commission">使用佣金券</string>
+
+    <string-array name="first_page">
+        <item>首页</item>
+        <item>客户</item>
+        <item>产品</item>
+        <item>交易</item>
+        <item>佣金</item>
+    </string-array>
+    <!-- 首页-发现 -->
+    <string name="task_default">默认</string>
+    <string name="task_new">最新</string>
+    <string name="task_degree">难度</string>
+    <string name="findproduct">产\t\t品</string>
+    <string name="finddeal">交\t\t易</string>
+    <string name="findkaiying">南传财讯</string>
+    <string name="findnews">新闻中心</string>
+    <string name="findcoll">理财学院</string>
+    <string name="findhelp">帮助中心</string>
+    <string name="search_task_select">标题</string>
+    <!-- 首页-我 -->
+    <string name="metool">我的道具</string>
+    <string name="qusetion1">24岁以下/60以上（1分）</string>
+    <string name="meyongjin">我的佣金</string>
+    <string name="meset">设\t\t置</string>
+    <string name="radiobutton1">24岁以下/60以上（1分）</string>
+    <string name="radiobutton2">25~34岁（4分）</string>
+    <string name="radiobutton3">40~49（3分）</string>
+    <string name="radiobutton4">50~59岁（2分）</string>
+    <string name="com_coming_soon">敬请期待</string>
+    <string name="edit_button_warning">点击\"编辑\"按钮以添加理财目标。</string>
+    <string name="email_text">邮件</string>
+    <string name="message_text">短信</string>
+    <string name="email_all_text">群发邮件</string>
+    <string name="message_all_text">群发短信</string>
+
+</resources>

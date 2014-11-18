@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊敬的" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张中华" />
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户：" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp" >
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资产委托人认购" />
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资产管理计划A类" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="份额：" />
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200" />
+
+        <TextView
+            android:id="@+id/textView27"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万份" />
+
+        <TextView
+            android:id="@+id/textView30"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="认购金额：" />
+
+        <TextView
+            android:id="@+id/tv8"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300" />
+        <TextView
+
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万元" />
+
+        <TextView
+            android:id="@+id/tv9"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="万(人民币    叁佰万元整)" />
+
+    </LinearLayout>
+
+</LinearLayout>

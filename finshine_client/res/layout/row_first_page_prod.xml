@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+     
+        android:id="@+id/prodName"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="产品名称" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <TextView
+        android:id="@+id/prodType"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="类型" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <TextView
+        android:id="@+id/prodDeadLine"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="期限" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <TextView
+        android:id="@+id/prodPublisher"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="发行期" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <TextView
+        android:id="@+id/prodInvstMoney"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="起投金额" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <TextView
+        android:id="@+id/prodIncome"
+      style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="预期收益" />
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="fill_parent"
+        android:background="@color/line_gray_c5ccd2" />
+
+    <ImageView
+        android:id="@+id/prodCollected"
+        
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:src="@drawable/ic_collect" />
+
+</LinearLayout>

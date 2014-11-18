@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+    
+     <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:id="@+id/buttonbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+<!--         <Button -->
+<!--             android:id="@+id/buttonBaseInfo" -->
+<!--             android:layout_width="222dp" -->
+<!--             android:layout_height="60dp" -->
+<!--             style="@style/Txt20Brownd7c093" -->
+<!--             android:text="基本信息" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/buttonEconomyInfo" -->
+<!--             android:layout_width="222dp" -->
+<!--             android:layout_height="60dp" -->
+<!--             style="@style/Txt20Brownd7c093" -->
+<!--             android:text="经济状况" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/buttonInvestRecord" -->
+<!--             android:layout_width="222dp" -->
+<!--             android:layout_height="60dp" -->
+<!--             style="@style/Txt20Brownd7c093" -->
+<!--             android:text="投资记录" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/buttonBack" -->
+<!--             android:layout_width="80dp" -->
+<!--             android:layout_height="40dp" -->
+<!--             android:layout_marginLeft="200dp" -->
+<!--             android:background="@drawable/ic_back" /> -->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_appoint_share"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="客服" />
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="张中华     13576895541" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@color/background_gray_d0bd9c"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dip"
+            android:layout_gravity="center"
+            android:background="@color/background_gray_d0bd9c"
+            android:text="取消"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

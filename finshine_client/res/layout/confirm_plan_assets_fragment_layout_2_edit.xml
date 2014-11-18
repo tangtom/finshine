@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 未使用 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" >
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:text="@string/confirm_plan_assets_liabilities" -->
+        <!-- android:textColor="#838383" -->
+        <!-- android:textSize="18sp" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/assets_liabilities_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bt_bg"
+                android:text="保存"
+                android:textColor="#838383" />
+
+            <Button
+                android:id="@+id/assets_liabilities_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_bg"
+                android:text="取消"
+                android:textColor="#838383" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_bar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/confirm_plan_assentstitle_assents"
+            android:textColor="#838383" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm_plan_assentstitle_expectedrevenue"
+            android:textColor="#838383" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/confirm_plan_assentstitle_liabilities"
+            android:textColor="#838383" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_line_v" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm_plan_assentstitle_yearperiod"
+            android:textColor="#838383" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_row"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_cash"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_cash_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_cash_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_cash_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_cash_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_cash_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/housing_fund_loans_edit"
+                        android:nextFocusForward="@+id/housing_fund_loans_edit"
+                        android:nextFocusRight="@+id/housing_fund_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_housing_fund_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/housing_fund_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/housing_fund_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/housing_fund_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/housing_fund_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/housing_fund_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_demanddeposits_edit"
+                        android:nextFocusForward="@+id/assentsinfo_demanddeposits_edit"
+                        android:nextFocusRight="@+id/assentsinfo_demanddeposits_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_demanddeposits"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_demanddeposits_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_demanddeposits_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_demanddeposits_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_demanddeposits_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_demanddeposits_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/housing_commercial_loans_edit"
+                        android:nextFocusForward="@+id/housing_commercial_loans_edit"
+                        android:nextFocusRight="@+id/housing_commercial_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_housing_commercial_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/housing_commercial_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/housing_commercial_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/housing_commercial_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/housing_commercial_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/housing_commercial_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_deposits_edit"
+                        android:nextFocusForward="@+id/assentsinfo_deposits_edit"
+                        android:nextFocusRight="@+id/assentsinfo_deposits_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_row"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_deposits"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_deposits_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_deposits_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_deposits_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_deposits_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_deposits_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/car_loans_edit"
+                        android:nextFocusForward="@+id/car_loans_edit"
+                        android:nextFocusRight="@+id/car_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_car_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/car_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/car_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/car_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/car_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/car_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_stock_edit"
+                        android:nextFocusForward="@+id/assentsinfo_stock_edit"
+                        android:nextFocusRight="@+id/assentsinfo_stock_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_stock"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_stock_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_stock_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_stock_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_stock_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_stock_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/consumer_loans_edit"
+                        android:nextFocusForward="@+id/consumer_loans_edit"
+                        android:nextFocusRight="@+id/consumer_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_consumer_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/consumer_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/consumer_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/consumer_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/consumer_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/consumer_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_fund_edit"
+                        android:nextFocusForward="@+id/assentsinfo_fund_edit"
+                        android:nextFocusRight="@+id/assentsinfo_fund_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_row"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_fund"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_fund_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_fund_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_fund_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_fund_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_fund_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/improvement_loans_edit"
+                        android:nextFocusForward="@+id/improvement_loans_edit"
+                        android:nextFocusRight="@+id/improvement_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_improvement_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/improvement_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/improvement_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/improvement_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/improvement_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/improvement_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_bonds_edit"
+                        android:nextFocusForward="@+id/assentsinfo_bonds_edit"
+                        android:nextFocusRight="@+id/assentsinfo_bonds_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_bonds"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_bonds_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_bonds_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_bonds_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_bonds_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_bonds_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/private_loans_edit"
+                        android:nextFocusForward="@+id/private_loans_edit"
+                        android:nextFocusRight="@+id/private_loans_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_private_loans"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/private_loans_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/private_loans_yearperiod_edit"
+                        android:nextFocusForward="@+id/private_loans_yearperiod_edit"
+                        android:nextFocusRight="@+id/private_loans_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/private_loans_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_estate_edit"
+                        android:nextFocusForward="@+id/assentsinfo_estate_edit"
+                        android:nextFocusRight="@+id/assentsinfo_estate_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_row"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_estate"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_estate_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_estate_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_estate_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_estate_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_estate_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/no_credit_card_payment_edit"
+                        android:nextFocusForward="@+id/no_credit_card_payment_edit"
+                        android:nextFocusRight="@+id/no_credit_card_payment_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_no_credit_card_payment"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/no_credit_card_payment_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/no_credit_card_payment_yearperiod_edit"
+                        android:nextFocusForward="@+id/no_credit_card_payment_yearperiod_edit"
+                        android:nextFocusRight="@+id/no_credit_card_payment_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/no_credit_card_payment_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_other_edit"
+                        android:nextFocusForward="@+id/assentsinfo_other_edit"
+                        android:nextFocusRight="@+id/assentsinfo_other_edit"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_other"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_other_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/assentsinfo_other_expectedrevenue_edit"
+                        android:nextFocusForward="@+id/assentsinfo_other_expectedrevenue_edit"
+                        android:nextFocusRight="@+id/assentsinfo_other_expectedrevenue_edit"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/assentsinfo_other_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/liabilities_other_edit"
+                        android:nextFocusForward="@+id/liabilities_other_edit"
+                        android:nextFocusRight="@+id/liabilities_other_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_other"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/liabilities_other_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:nextFocusDown="@+id/liabilities_other_yearperiod_edit"
+                        android:nextFocusForward="@+id/liabilities_other_yearperiod_edit"
+                        android:nextFocusRight="@+id/liabilities_other_yearperiod_edit"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <EditText
+                        android:id="@+id/liabilities_other_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_row"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_assentsinfo_total"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:id="@+id/assentsinfo_total_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:id="@+id/assentsinfo_total_expectedrevenue_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_liabilities_total"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:id="@+id/liabilities_total_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:id="@+id/liabilities_total_yearperiod_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textColor="#838383" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:text="@string/confirm_plan_net_worth"
+                        android:textColor="#d7a05b" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:id="@+id/net_worth_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="left|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColor="#d7a05b" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:textColor="#838383" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_row_line" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="18dp"
+                        android:textColor="#838383" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="（此表所填均为税后金额   单位：元）"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

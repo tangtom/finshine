@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专项资产管理计划传真交易协议书"
+            android:textColor="#D7C093"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="甲方签名：" />
+
+        <ImageView
+            android:id="@+id/btnPlanTableSign"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:src="@drawable/bg_sign" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="380dp"
+            android:gravity="center"
+            android:text="乙方：" />
+
+        <TextView
+            android:id="@+id/txtFaxTableCompany"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="上海金元百利有限公司" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtContent"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="第五条      传真交易业务范围" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="甲方撤销专户交易账户或专用账户"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="一方违约，另一方面通知对方终止协议"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="第六章      其他事项"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1、本协议一式两份，甲乙双方各执一份，具有同等法律效力。"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="2、本协议未尽事宜由双方协商解决。"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="912dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/txtFaxTableSignDate"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="700dp"
+            android:layout_marginTop="10dp"
+            android:text="2014年7月31日" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/bg_filter_condition"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lthidden"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etInput1"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_5corner_bg"
+                android:hint="起始数据"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:text=" - " />
+
+            <EditText
+                android:id="@+id/etInput2"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_5corner_bg"
+                android:hint="结束数据"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_input_value"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="保存" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/lt"
+        android:divider="@color/line_gray_c5ccd2"
+        android:dividerHeight="@dimen/line"
+        android:fadingEdge="none"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

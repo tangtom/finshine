@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/task_money_small" />
+
+    <TextView
+        style="@style/Txt16Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textTaskReward1"
+        style="@style/Txt16Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="bottom" />
+
+    <TextView
+        style="@style/Txt16Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="bottom"
+        android:text="%" />
+
+    <TextView
+        style="@style/Txt16Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:text="×" />
+
+    <TextView
+        android:id="@+id/textTaskReward2"
+        style="@style/Txt16Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="bottom" />
+
+</LinearLayout>

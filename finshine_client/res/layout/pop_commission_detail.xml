@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_cs_data_analyise"
+    android:orientation="horizontal"
+    android:id="@+id/lt_pop" >
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14BackgroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="累计总佣金" />
+
+            <TextView
+                android:id="@+id/txt_total_commission"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                 />
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计基础佣金" />
+            
+            <TextView
+                android:id="@+id/txt_base_commission"
+                style="@style/Txt14Gray808080"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                />
+			<TextView
+                style="@style/Txt14Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计奖励佣金" />
+            
+            <TextView
+                android:id="@+id/txt_extra_commission"
+                style="@style/Txt14Gray808080"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                 />
+			<TextView
+                style="@style/Txt14Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14BackgroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="待到账佣金" />
+
+            <TextView
+                android:id="@+id/txt_processing_commission"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                 />
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14BackgroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的积分" />
+
+            <TextView
+                android:id="@+id/txt_my_pointer"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+               />
+
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="60dp"
+	    android:orientation="vertical"
+	    >
+	    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt14BackgroundColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="20dp"
+                android:text="佣金统计" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearCommissionStatistics"
+                ></LinearLayout>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                 android:layout_marginTop="5dip"
+                 style="@style/Txt14BackgroundColor"
+                android:layout_marginRight="20dp"
+                android:text="单位：万元"
+                />
+            
+            </LinearLayout >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="165dp" android:paddingRight="15dp" >
+                
+                <WebView android:id="@+id/addGroupWebView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="25dp"
+                />
+            </LinearLayout>
+            
+            
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="专项资产管理计划交易业务申请书(个人)"
+                android:textColor="#D7C093"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:src="@drawable/ic_cbi_contact_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="预留银行账户信息"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_required" />
+
+            <TextView
+                style="@style/TextGary838383"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="银行户名：" />
+
+            <EditText
+                android:id="@+id/editBankName"
+                style="@style/TextGary838383"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:maxLength="40" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_required" />
+
+            <TextView
+                style="@style/TextGary838383"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="银行行号：" />
+
+            <EditText
+                android:id="@+id/editBankID"
+                style="@style/TextGary838383"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:maxLength="30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="55dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_required" />
+
+            <TextView
+                style="@style/TextGary838383"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="银行账号：" />
+
+            <TextView
+                android:id="@+id/editBankCardID"
+                style="@style/TextGary838383"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="12222" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_required" />
+
+            <TextView
+                style="@style/TextGary838383"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="银行全称：" />
+
+            <TextView
+                android:id="@+id/editBankNameTotal"
+                style="@style/TextGary838383"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="中国银行" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:src="@drawable/ic_cbi_contact_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="您的联系方式 "
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="false" >
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="right"
+                        android:text="账单寄送方式：" />
+
+                    <Spinner
+                        android:id="@+id/editBillSendWay"
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_spninner"
+                        android:entries="@array/diploma_status"
+                        android:padding="5dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="85dp"
+                        android:gravity="right"
+                        android:text="手机：" />
+
+                    <TextView
+                        android:id="@+id/txtPhobe"
+                        style="@style/TextGary838383"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:text="13852341718" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="right"
+                        android:text="账单寄送地址：" />
+
+                    <EditText
+                        android:id="@+id/editBillSendAddress"
+                        style="@style/TextGary838383"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:gravity="right"
+                        android:text="传真：" />
+
+                    <EditText
+                        android:id="@+id/editFax"
+                        style="@style/TextGary838383"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="right"
+                        android:text="E-mail：" />
+
+                    <EditText
+                        android:id="@+id/editEmail"
+                        style="@style/TextGary838383"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85dp"
+                        android:gravity="right"
+                        android:text="联系电话：" />
+
+                    <EditText
+                        android:id="@+id/contactPhone"
+                        style="@style/TextGary838383"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/TextGary838383"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:gravity="right"
+                        android:text="邮编：" />
+
+                    <EditText
+                        android:id="@+id/postCode"
+                        style="@style/TextGary838383"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

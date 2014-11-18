@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/customer_market_collectinfo5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="产品申购合同签订"
+                style="@style/Txt18Gray808080" />
+
+            <ImageView
+                android:id="@+id/ivOposive"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/credent_positive" />
+
+            <Button
+                android:id="@+id/btnUploadOP"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="上传风险揭示照" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivdefensive"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:scaleType="fitXY"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/credent_obverse" />
+
+            <Button
+                android:id="@+id/btnUploadDe"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="上传合同照" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignContract3"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="480dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="请签署合同" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近入境时间"
+            style="@style/Txt18Gray808080" />
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/passporttime"
+            style="@style/Txt18Gray808080"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_add_invester"
+            android:drawableRight="@drawable/ic_date"
+            android:inputType="none"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="手机验证码 "
+            style="@style/Txt18Gray808080" />
+
+        <EditText
+            android:id="@+id/etSMScode"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/etSmsVerfication3"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/product_outside_line"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/text_brown_d7c093"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="张中华先生"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="400dp"
+                    android:gravity="center"
+                    android:text="当前投资总额："
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textInvestTotalAsserts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1000万"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="累计总收益：" />
+
+                <TextView
+                    android:id="@+id/cumulativeTotalRevenue"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:gravity="center_vertical"
+                    android:text="190万" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="平均预期收益率：" />
+
+                <TextView
+                    android:id="@+id/averageExpectedRevenue"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="0%" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="平均投资期限：" />
+
+                <TextView
+                    android:id="@+id/averageInvestmentPeriod"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:text="个月" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="累计投资：" />
+
+                <TextView
+                    android:id="@+id/totalPurchasedQty"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="5" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:gravity="center_vertical"
+                    android:text="款产品" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="实际平均预期收益率：" />
+
+                <TextView
+                    android:id="@+id/averageActualRevenue"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="0%" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="平均投资期限："
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="0个月"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/product_outside_line"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/text_brown_d7c093"
+                android:gravity="center"
+                android:text="当前资产分布"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/noInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:text="暂无相关信息"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+		<TextView
+                android:id="@+id/noInfo"
+                  android:layout_width="fill_parent"
+                android:layout_height="102dp"
+                android:layout_margin="3dp"
+                android:gravity="left"
+                android:visibility="gone"
+                android:text="暂无相关信息"
+                android:textColor="@color/black"
+                />
+            
+            <ListView
+                android:id="@+id/investList"
+                android:layout_width="fill_parent"
+                android:layout_height="102dp"
+                android:layout_margin="3dp"
+                android:footerDividersEnabled="false"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Txt20Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="最近8个进度收益分析"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="40dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@color/text_brown_d7c093"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="季度收益" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@color/yellow"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="当前收益" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@color/blue"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="累计收益" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addView"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:padding="0dp" >
+
+        <WebView
+            android:id="@+id/investweb"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+    </LinearLayout>
+
+</LinearLayout>

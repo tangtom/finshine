@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/buttonBarsLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="680dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="取消" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="820dp"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/text_gray_bfbfbf" />
+
+    <FrameLayout
+        android:id="@+id/customBaseInfoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <!--
+    LinearLayout
+        android:id="@+id/bottomLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/imageMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mail" />
+
+        <Button
+            android:id="@+id/imagePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_phone" />
+
+        <Button
+            android:id="@+id/imageSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sms" />
+    </LinearLayout>
+    -->
+
+
+    <!-- <include android:id="@+id/base_info_editView" -->
+    <!-- layout="@layout/frag_base_info_edit" -->
+    <!-- android:visibility="gone"/> -->
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:id="@+id/sortButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" />
+
+<!--         <Button -->
+<!--             android:id="@+id/baseInfo" -->
+<!--             style="@style/Txt18Gray808080" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@null" -->
+<!--             android:text="基本信息" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/assetsInfo" -->
+<!--             style="@style/Txt18Gray808080" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="20dp" -->
+<!--             android:background="@null" -->
+<!--             android:text="财务状况" /> -->
+        
+        
+    
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="650dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/confirmBtn"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/product_outside_line"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/confirmAndChooseBtn"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_outside_line"
+            android:text="保存并选择产品" />
+    </LinearLayout>
+    
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#E6D7BA" />
+
+    <FrameLayout
+        android:id="@+id/fragCustomMarketCollectInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

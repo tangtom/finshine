@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="专项资产管理计划交易业务申请书(个人)"
+                android:textColor="#D7C093"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp" 
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:src="@drawable/ic_cbi_contact_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="受理"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextGary838383"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="交易类型：" />
+
+            <Spinner
+                android:id="@+id/investmentType"
+                style="@style/TextGary838383"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/investment1_status"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:src="@drawable/ic_cbi_contact_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="特别提醒"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="1.请在填写此表前，仔细阅读本公司产品的《资产管理合同》，《投资说明书》，《投资人权益须知》等相关法律文件。" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2.本表中申请金额或份额的大小写必须一致，每份申请书上只能填写一笔业务，否则申请无效。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:src="@drawable/ic_cbi_contact_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="您的基本信息"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="10dp"
+                    android:gravity="right"
+                    android:text="申请人：" />
+
+                <TextView
+                    android:id="@+id/proposer"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp" 
+                    style="@style/TextGary838383"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="10dp"
+                    android:gravity="left"
+                    android:text="张中华"
+                    />
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="10dp"
+                    android:gravity="right"
+                    android:text="性别：" />
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/man"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/woman"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="女" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:baselineAligned="false" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:gravity="right"
+                    android:text="证件类型：" />
+
+                <TextView
+                    android:id="@+id/IDType"
+                    style="@style/TextGary838383"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="身份证"
+                    />
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:paddingTop="5dp"
+                    android:gravity="right"
+                    android:text="国籍：" />
+
+                <Spinner
+                    android:id="@+id/nationalityStatus"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/nationality_status"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="2dp"
+                android:baselineAligned="false" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="证件有效期：" />
+
+                <TextView
+                    android:id="@+id/certificateValidity"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    style="@style/TextGary838383"
+                    android:layout_marginLeft="10dp"
+                    android:text="长期"
+                     />
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="证件号码：" />
+
+                <TextView
+                    android:id="@+id/certificateNumber"
+                    android:layout_width="150dp"
+                    style="@style/TextGary838383"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="1354547987812021"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/shape_find_target_customer_bg" >
+
+        <LinearLayout
+            android:id="@+id/lt_1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_top_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/tvProdName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="新增联系纪要"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lt_1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_date"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="2014年04月05日" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/et_title"
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:background="@drawable/shape_5corner_bg"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入标题" 
+                    android:maxLength="20"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/et_mmss"
+                    android:layout_gravity="left|top"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:text="12:20" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:gravity="left|top"
+                    android:padding="8dp"
+                    android:background="@drawable/shape_5corner_bg"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" 
+				    android:singleLine="false" 
+					android:maxLines="6" 
+                    android:minHeight="100dp"
+                    android:hint="请输入内容" 
+                    android:maxLength="600"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_save_contact_summery"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btn_cancle_contact_summery"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="取消" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close" />
+    </FrameLayout>
+
+</RelativeLayout>

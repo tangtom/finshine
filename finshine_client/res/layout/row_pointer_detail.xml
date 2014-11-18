@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imgIsNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/ic_pointer_news" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt20Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号：" />
+
+                <TextView
+                    android:id="@+id/textOrderNumber"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="1029329832989" />
+
+                <TextView
+                    android:id="@+id/textPublisher"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="众银基金" />
+
+                <TextView
+                    android:id="@+id/textAmount"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="300万" />
+
+                <TextView
+                    android:id="@+id/textSalemans"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="张三" />
+
+                <TextView
+                    android:id="@+id/textDateOfCreate"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="2014-12-23" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总佣金比例：" />
+
+                <TextView
+                    android:id="@+id/textTotalCommissionRatio"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.5%" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（基础+"
+                    android:textColor="@color/text_red_ff0000" />
+
+                <TextView
+                    android:id="@+id/textFixedCommissionRatio"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="1%"
+                    android:textColor="@color/text_red_ff0000" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="奖励+"
+                    android:textColor="@color/text_red_ff0000" />
+
+                <TextView
+                    android:id="@+id/textExtraCommissionRatio"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5%"
+                    android:textColor="@color/text_red_ff0000" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="）"
+                    android:textColor="@color/text_red_ff0000" />
+                <!-- 隐藏是否显示 -->
+
+                <LinearLayout
+                    android:id="@+id/LinearCommissionCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="实际佣金" />
+
+                    <TextView
+                        android:id="@+id/textTotalCommission"
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="3万" />
+
+                    <TextView
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="（基础+"
+                        android:textColor="@color/text_red_ff0000" />
+
+                    <TextView
+                        android:id="@+id/textFixedCommission"
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="2万"
+                        android:textColor="@color/text_red_ff0000" />
+
+                    <TextView
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="奖励+"
+                        android:textColor="@color/text_red_ff0000" />
+
+                    <TextView
+                        android:id="@+id/textExtraCommission"
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1万"
+                        android:textColor="@color/text_red_ff0000" />
+
+                    <TextView
+                        style="@style/Txt14Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="）"
+                        android:textColor="@color/text_red_ff0000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResultFk"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:scaleType="center"
+        android:text="审核中" />
+
+</RelativeLayout>

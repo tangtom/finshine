@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_prod_detail"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/product_detail_title"
+        style="@style/Txt18Whiteffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="产品资料"
+         />
+
+    <ListView
+        android:id="@+id/listview_prod_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:divider="@color/text_brown_d8c49a"
+        android:dividerHeight="@dimen/line"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lt_me_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <ListView
+        android:id="@+id/listview_me_detail"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dip"
+        android:divider="@color/text_gray_bfbfbf"
+        android:dividerHeight="@dimen/line"
+        android:listSelector="@drawable/product_list_item_bg"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="horizontal" 
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnPre"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="上一步" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="下一步" />
+
+</LinearLayout>

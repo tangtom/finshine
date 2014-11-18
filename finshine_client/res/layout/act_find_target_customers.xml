@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_manager_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:id="@+id/sortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/input_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="400dp"
+                android:background="@drawable/product_outside_line"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_search_text"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/search_customer_name"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="40dip"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/product_search_icon" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="15dp"
+                android:button="@drawable/common_check_box_select"
+                android:id="@+id/checkSelectAll"
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选/取消全选" />
+            <TextView
+            android:id="@+id/tv_selected_customer"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="已选择5个客户" />
+
+            <Button
+                android:id="@+id/btn_add_customer"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="110dp"
+                android:text="新增" />
+
+            <Button
+                android:id="@+id/btn_del_customer"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/btn_send_emali"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/email_text" />
+
+            <Button
+                android:id="@+id/btn_send_sms"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/message_text" />
+        </LinearLayout>
+
+        <ListView
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:divider="@color/line_gray_c5ccd2"
+            android:dividerHeight="@dimen/line"
+            android:id="@+id/listCustomerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" 
+     android:focusable="true">
+   
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_add_invester"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            style="@style/TextGary838383"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="我的道具"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="706dp"
+            android:layout_height="367dp"
+            android:layout_marginLeft="15dp"
+            android:baselineAligned="false" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/PropertyGridV"
+                style="@style/Styled_Scrollbar"
+                android:layout_width="350dp"
+                android:layout_height="341dp"
+                android:layout_gravity="top"
+                android:cacheColorHint="#00000000"
+                android:columnWidth="60dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollingCache="true"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="5dp"
+                ptr:ptrAnimationStyle="flip" />
+    
+            <View
+                android:layout_width="1.2dip"
+                android:layout_height="310dp"
+                android:layout_marginTop="5dp"
+                android:background="#BFBFBF" />
+            <!-- <ScrollView> -->
+            
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="224dp"
+                android:layout_height="320dp" >
+
+            <LinearLayout
+                android:layout_width="224dp"
+                android:layout_height="333dp"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/property_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#999999"
+                        android:textSize="18sp"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_property_picture"
+                        android:layout_width="24.5dp"
+                        android:layout_height="24.5dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/property_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/warn1"
+                    style="@style/Txt24Graye5e4e4"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="25dp"
+                    android:text="点击道具" />
+
+               <TextView
+                   android:id="@+id/warn2"
+                   style="@style/Txt24Graye5e4e4"
+                   android:layout_width="139dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="65dp"
+                   android:layout_marginTop="15dp"
+                   android:text="查看详情" />
+
+                <TextView
+                    android:id="@+id/popTxetType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="道具类型"
+                    style="@style/Txt18Brownd7c093"
+                    />
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/property_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#999999"
+                        android:textSize="18sp"
+                       />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/popTxetIntro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="道具说明"
+                    style="@style/Txt18Brownd7c093" />
+
+                <TextView
+                    android:id="@+id/property_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#999999"
+                    android:textSize="18sp"              
+                    />
+                 <!-- android:scrollbars="vertical"  -->
+            </LinearLayout>
+          
+           <!--  <LinearLayout
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout> -->
+            </ScrollView>
+        </LinearLayout>
+        </LinearLayout>
+   
+
+</LinearLayout>

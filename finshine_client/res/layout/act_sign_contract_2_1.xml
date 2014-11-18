@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="委托人风险评估表"
+        android:textColor="#D7C093"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="基本信息"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="90dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请人："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/proposerName"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="phone"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:text="是否首次填写："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/firstFill"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="是"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件类型："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/papersType"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="身份证"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:text="证件有效期："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/validity"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="长期"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件号码："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/papersNO"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="37270843213387483740974"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#E6D7BA" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="100dp" >
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="学历："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerDiploma"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/diploma_status"
+                android:padding="5dp"
+                />
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:text="购买原因："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+             <Button
+                android:id="@+id/spinnerFinancialGoal"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:baselineAligned="false" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="职业："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerJob"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/customer_job"
+                android:padding="5dp"
+                />
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="10dp"
+                android:text="投资资金来源："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/spinnerInvestSource"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="年收入："
+                android:gravity="right"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerIncome"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/annul_income"
+                android:padding="5dp"
+               />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="关于这份问卷"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="21dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:text="本问卷旨在协助您了解自己对投资风险的承受度及属性，以下问题是用来协助评估您本身投资属性怀“一般 ”风险承受"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:text="度，问卷结果可能不完全呈现投资人在面对投资风险的真正态度，但是可提供您一些衡量风险的指标"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

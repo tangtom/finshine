@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- <include -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- layout="@layout/common_header" /> -->
+
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/customer_market_collectinfo1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的" />
+
+            <TextView
+                android:id="@+id/txtCsName"
+                 style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘文超女士" />
+
+            <TextView
+                 style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，由于您之前还未与理财师" />
+
+            <TextView
+                android:id="@+id/txtSalesName"
+                 style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX" />
+
+            <TextView
+                 style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定，请先提交绑定认证信息。" />
+
+            <TextView
+                style="@style/Txt16Redff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(以下信息一经填写 将无法更改)" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_gray_bfbfbf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/csIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/customer_market_customer_icon" />
+
+                <Button
+                    android:id="@+id/btnUploadIcon"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="上传照片" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Txt18Gray808080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="姓        名" />
+
+                    <EditText
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:maxLength="15"
+                         android:background="@drawable/shape_5corner_bg"
+                        android:id="@+id/editName"
+                        style="@style/Txt18Gray808080"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:inputType="textPersonName" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Txt18Gray808080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="国        籍" />
+
+                    <Button
+                        android:gravity="center_vertical|left"
+                        android:id="@+id/spinnerCountry"
+                        style="@style/Txt18Gray808080"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_spninner"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="30dp"
+                android:background="@color/line_gray_c5ccd2" />
+
+            <FrameLayout
+                android:id="@+id/details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        layout="@layout/common_foot_next_pre" />
+
+</RelativeLayout>

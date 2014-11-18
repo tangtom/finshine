@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/lt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_find_target_customer_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_corner"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:text="选择城市"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/input_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_5corner_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search_text"
+                style="@style/Txt14Gray808080"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="请输入城市名称"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_search_icon" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="280dp" >
+
+            <ListView
+                android:padding="5dp"
+                android:divider="@color/line_gray_c5ccd2"
+                android:dividerHeight="@dimen/line"
+                android:id="@+id/cityListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true" >
+
+                <com.custom.view.SideBar
+                    android:id="@+id/letter_sideBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center_vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonCreateCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增客户" />
+
+    <Button
+        android:id="@+id/buttonCustomerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客户列表" />
+
+    <Button
+        android:id="@+id/buttonGetCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取客户" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

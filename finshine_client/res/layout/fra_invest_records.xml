@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_list_item_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/btnFilter"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="156dp"
+            android:text="筛选" />
+
+        <LinearLayout
+            android:id="@+id/input_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/product_outside_line"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search_text"
+                style="@style/Txt14Gray808080"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="@string/search_product_name"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_search_icon" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_filter_small"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到期状态" />
+
+            <Spinner
+                android:id="@+id/spinnerMaturityStatus"
+                style="@style/Txt18Gray808080"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/maturity_status"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="投资额" />
+
+            <Button
+                android:id="@+id/btnInvestment"
+                style="@style/Txt18Gray808080"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:padding="5dp" 
+                android:gravity="left"
+                android:text="全部"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonReset"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="重置条件" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="搜索" />
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+
+    <ListView
+        android:layout_marginTop="6dp"
+        android:id="@+id/listview_invest_record"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_gray_c5ccd2"
+        android:dividerHeight="@dimen/line"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

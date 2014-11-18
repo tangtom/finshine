@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_filter_condition"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtPopTitle"
+        style="@style/Txt16Redff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:text="@string/validity_date" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_button_long_time_effective"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="@string/long_time" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="10dp"
+        android:background="#d4d4d4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.codans.blossom.datepicker.DateDrumPicker
+            android:id="@+id/datepickerStartTime"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSure"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/background_gray_d0bd9c"
+        android:gravity="center"
+        android:text="@string/btn_ok"
+        android:textColor="@color/white" />
+
+</LinearLayout>

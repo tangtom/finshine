@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/my_pointer_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textCommissionName"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonCommission"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/background_gray_d0bd9c"
+            android:gravity="center"
+            android:text="赢取佣金券"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="0dp"
+        android:background="#d4d4d4" />
+
+    <ListView
+        android:id="@+id/listUseCommission"
+        android:layout_width="match_parent"
+        android:layout_height="350dip"
+        android:divider="@color/text_gray_bfbfbf"
+        android:dividerHeight="1dp"
+        android:visibility="visible" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txtNoCommission"
+        style="@style/Txt18Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="没有可使用的佣金券"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/border_commission"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="佣金比例：" />
+
+            <TextView
+                android:id="@+id/textFixedCommissionRatio"
+                style="@style/Txt18Gray808080"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="0%" />
+
+            <TextView
+                android:id="@+id/textExtraCommissionRatio"
+                style="@style/Txt16Redff0000"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="30dip"
+                android:gravity="right"
+                android:text="+0%" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="总比例：" />
+
+            <TextView
+                android:id="@+id/textTotalCommissionRatio"
+                style="@style/Txt16Redff0000"
+                android:layout_width="145dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dip"
+                android:gravity="right"
+                android:text="0%" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dip"
+        android:layout_height="35dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@color/background_gray_d0bd9c"
+            android:gravity="center"
+            android:text="确定使用佣金券"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="50dip"
+            android:background="@color/background_gray_d0bd9c"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

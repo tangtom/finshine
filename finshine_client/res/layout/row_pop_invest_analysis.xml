@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_white_ffffff" >
+    
+    
+    <LinearLayout
+        android:layout_width="550px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prodFirstTypeName"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="资管" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            android:layout_marginRight="20dp">
+
+            <com.custom.view.MySeekBar
+                android:id="@+id/purchasedQtyPercent"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_weight="4"
+                android:progress="70"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@null" />
+
+            <TextView
+                android:id="@+id/purchasedQty"
+                style="@style/Txt14Orangeff8b23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="60单" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

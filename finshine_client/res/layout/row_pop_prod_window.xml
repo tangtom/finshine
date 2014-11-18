@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:orientation="horizontal"
+   android:padding="8dp" >
+
+    <TextView
+        android:text="张中华"
+        android:id="@+id/tvCsName"
+        style="@style/Txt18Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:text="100万"
+          android:id="@+id/tvInvestMoney"
+        style="@style/Txt18Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:text="2013-02-09"
+        android:id="@+id/tvInvestDate"
+        style="@style/Txt18Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:text="已成交"
+        android:id="@+id/tvInvestState"
+        style="@style/Txt18Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+</LinearLayout>

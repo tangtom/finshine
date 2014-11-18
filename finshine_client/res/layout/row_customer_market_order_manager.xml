@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/saleOrderCode"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXXXXX" />
+
+        <TextView
+            android:id="@+id/createDate"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-05-23 19:40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/customerName"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="0.7"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="张成喜" />
+
+    <TextView
+        android:id="@+id/prodName"
+        style="@style/Txt14Graybfbfbf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="银企众盈银企众盈银企众盈银企众盈" />
+
+    <TextView
+        android:id="@+id/totalMoney"
+        style="@style/Txt18Orangeff8b23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="300万" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/payStates"
+                style="@style/Txt16Brownd7c093"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已支付" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / " />
+
+            <TextView
+                android:id="@+id/tradeStates"
+                style="@style/Txt16Redff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买失效" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/failReson"
+            style="@style/Txt14Brownd7c093"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="(份额已售完份额已售完)" />
+    </LinearLayout>
+
+</LinearLayout>

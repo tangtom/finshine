@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="common_button_ok">确定</string>
+    <string name="common_button_cancel">取消</string>
+    <string name="title_dialog_birthday">选择出生日期</string>
+
+</resources>

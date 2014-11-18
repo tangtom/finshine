@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.custom.view.OverrideLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:duplicateParentState="true" >
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip"
+            android:layout_marginLeft="130dip"
+            android:background="@drawable/border_commission"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_long_productname"
+                style="@style/Txt12Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银企众赢" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="3.2"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_first_type"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="[]" />
+
+                <TextView
+                    android:id="@+id/tv_invest_productname"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_is_investhot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_hot" />
+
+                <TextView
+                    android:id="@+id/tvCollectProd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_hide" />
+
+                <TextView
+                    android:id="@+id/tv_buy_leftday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="购买剩3天"
+                    android:textColor="#FF8C22"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="3"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参考收益：" />
+
+                <TextView
+                    android:id="@+id/tv_ecpected_money"
+                    style="@style/Txt20Orangeff8b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="10%-12.5%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@id/linearLayout1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="3.2"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起投金额：" />
+
+                <TextView
+                    android:id="@+id/tv_start_invest_money"
+                    style="@style/Txt14Orangeff8b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100" />
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万" />
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="投资期限：" />
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    style="@style/Txt14Orangeff8b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.5" />
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="月" />
+
+                <TextView
+                    android:id="@+id/tv_product_category"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="3"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_fix_commission_1"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="固定佣金：" />
+
+                <TextView
+                    android:id="@+id/tv_fix_commision"
+                    style="@style/Txt20Orangeff8b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.3%" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="515dip"
+            android:layout_marginTop="68dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_appoint_share_title"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="预约份额：" />
+
+            <TextView
+                android:id="@+id/tv_appoint_share_count"
+                style="@style/Txt20Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="300/500万" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@id/linearLayout2"
+            android:layout_marginTop="-4dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发行期：" />
+
+            <TextView
+                android:id="@+id/tv_publish_time"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="2014.04.13-2014.04.13" />
+
+            <TextView
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发行商:" />
+
+            <TextView
+                android:id="@+id/tv_publisher"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="sssss" />
+
+            <LinearLayout
+                android:id="@+id/btn_phone"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="left" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:contentDescription="@null"
+                    android:focusable="false"
+                    android:src="@drawable/ic_phone_yellow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_is_already_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:src="@drawable/icon_onslaeing" />
+
+        <ImageView
+            android:id="@+id/iv_is_recommand_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:src="@drawable/icon_recommand" />
+
+        <ImageView
+            android:id="@+id/btnShowItemBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/slect_more_btn"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lt_prod_compare"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCompreProd"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="85dp"
+                android:text="对比" />
+
+            <LinearLayout
+                android:id="@+id/iv_intent_prod"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/ivIntprodStates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuyProd"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="购买产品" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.custom.view.OverrideLinearLayout>

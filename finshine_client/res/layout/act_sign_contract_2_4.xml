@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="委托人风险评估表"
+            android:textColor="#D7C093"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="10dp"
+            android:text="本人已了解自身承受能力需与拟投资资产管理计划风险相匹配的原则。在进行交易时，如拟投资管理计划风险特征超过本人的一 般承受度时，则按第二种方式进行交易(未选择默认选项2进行交易)" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRiskSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="3px"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/select1"
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="1.需资产管理公司与本人书面确认后，方可进行交易。" />
+
+            <RadioButton
+                android:id="@+id/select2"
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:checked="true"
+                android:text="2.本人仍愿意投资该资产管理计划，并愿意承担由于风险不匹配所可能导致的投资风险。" />
+        </RadioGroup>
+    </LinearLayout>
+
+  
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="公司地址:" />
+
+        <TextView
+            android:id="@+id/txtCompanyAddress"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="****************     **********    ********" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="电话:" />
+
+        <TextView
+            android:id="@+id/txtCompanyTel"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="************************" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="传真：" />
+
+        <TextView
+            android:id="@+id/txtCompanyFax"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="************************" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_required" />
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="投资人签章" />
+
+        <ImageView
+            android:id="@+id/btnRiskTableSign"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:src="@drawable/bg_sign" />
+
+        <TextView
+            android:id="@+id/txtRiskTableSignDate"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="530dp"
+            android:layout_marginTop="10dp"
+            android:text="2014年7月31日" />
+    </LinearLayout>
+
+</RelativeLayout>

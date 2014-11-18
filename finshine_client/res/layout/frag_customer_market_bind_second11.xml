@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的" />
+
+            <TextView
+                android:id="@+id/txtCsName"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘文超" />
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="本协议包括：" />
+
+        <TextView
+            android:id="@+id/textcontent"
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="(1)XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="客户签名：" />
+
+            <ImageView
+                android:id="@+id/imageSign"
+                android:src="@drawable/bg_sign"
+                android:layout_width="150dp"
+                android:scaleType="center"
+                android:layout_gravity="center_vertical"
+                android:layout_height="50dip"
+                android:text="请签名" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textDate"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:gravity="right"
+            android:text="日期" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+     <!-- 未使用 -->
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2" 
+        android:layout_marginTop="10dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="20dp"
+       android:orientation="vertical" >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal" >
+
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:text="基本信息" 
+               android:textColor="#999999"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               />
+       </LinearLayout>
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="55dp"
+           android:layout_marginRight="70dp" >
+
+           <TableRow
+               android:id="@+id/tableRow1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="昵称：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textNickName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:text="火车侠客" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="婚姻状况："
+                   style="@style/Txt18Graybfbfbf" />
+
+               <TextView
+                   android:id="@+id/textMaritalStatus"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="已婚" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="工作单位：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textEmployer"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="灵动科技" 
+                   style="@style/Txt18Graybfbfbf"/>
+           </TableRow>
+
+           <TableRow
+               android:id="@+id/tableRow2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="国籍：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textNationality"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:text="美国" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="家庭成员：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textFamilyInfo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="父、母、儿、女、妻" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="职　　务：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textPosition"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="产品经理" 
+                   style="@style/Txt18Graybfbfbf"/>
+           </TableRow>
+
+           <TableRow
+               android:id="@+id/tableRow3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="生日：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textBirthday"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:gravity="left"
+                   android:text="1985—4—22" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="所在城市：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textCity"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="上海" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="投资爱好：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textInvestPreference"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="激进型" 
+                   style="@style/Txt18Graybfbfbf"/>
+           </TableRow>
+       </TableLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#F2F2F2" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal" >
+
+           <!--  ImageView
+               android:layout_width="15dp"
+               android:layout_height="25dp"
+               android:background="#D7C094" />-->
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:text="联系方式" 
+               android:textColor="#999999"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               />
+       </LinearLayout>
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="55dp"
+           android:layout_marginRight="70dp" >
+
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="联系地址 ："
+                   style="@style/Txt18Graybfbfbf" />
+
+               <TextView
+                   android:id="@+id/textContactAddress"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.7"
+                   android:text="湖北省襄阳市" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="座机号码："
+                   style="@style/Txt18Graybfbfbf" />
+
+               <TextView
+                   android:id="@+id/textTelephone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="021—8888888"
+                   style="@style/Txt18Orangeff8b23" />
+
+                  <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_phone" 
+                       />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.8" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="社交号码：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textSocialNumber"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.7"
+                   android:text="8888888" 
+                   style="@style/Txt18Graybfbfbf"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="居住地址：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textResidentialAddress"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.7"
+                   android:text="高新区追日路2号" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="传真号码："
+                   style="@style/Txt18Graybfbfbf" />
+
+               <TextView
+                   android:id="@+id/textFax"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="021—8888888" 
+                   style="@style/Txt18Orangeff8b23"/>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="20dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.8" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="账单方式："
+                   style="@style/Txt18Graybfbfbf" />
+
+               <TextView
+                   android:id="@+id/textBillType"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.7"
+                   android:text="电子账单"
+                   style="@style/Txt18Graybfbfbf" />
+           </TableRow>
+       </TableLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#F2F2F2" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal" >
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:text="紧急联系人" 
+               android:textColor="#999999"
+               android:textSize="18sp"
+               android:textStyle="bold"/>
+       </LinearLayout>
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="55dp"
+           android:layout_marginRight="70dp" >
+
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="姓名：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textEcName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.5"
+                   android:text="王三" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="手　　机：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textEcellPhone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1388888888" 
+                   style="@style/Txt18Orangeff8b23"/>
+               
+                  <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_phone" 
+                       />
+                  
+                    <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.6" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="关系：" 
+                   style="@style/Txt18Graybfbfbf"/>
+
+               <TextView
+                   android:id="@+id/textEcRelation"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="夫妻" 
+                   style="@style/Txt18Graybfbfbf"/>
+           </TableRow>
+       </TableLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#F2F2F2" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal" >
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:text="安全信息"
+               android:textColor="#999999"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="horizontal" >
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:background="#D7C094"
+               android:layout_marginRight="40dp" />
+
+           <ImageView
+               android:id="@+id/imageView2"
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:background="#D7C094" />
+
+       </LinearLayout>
+       
+        <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:text="身份证号码：888—888—888"
+               android:textSize="22dp"
+               android:textColor="#999999" />
+       
+   </LinearLayout>
+   
+</LinearLayout>
+</ScrollView>

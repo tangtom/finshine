@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_find_target_customer_bg"
+    android:id="@+id/fl_prod_compare" 
+    android:paddingBottom="20dp">
+     
+    <TextView
+            android:layout_margin="1dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tvProdName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_corner"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:text="对比"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvProdName"
+        android:id="@+id/lt_top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lt_left"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:id="@+id/tv_product_name1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/iv_delete_prod1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_vs" />
+
+        <LinearLayout
+            android:id="@+id/lt_right"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:id="@+id/tv_product_name2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLength="30"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/iv_delete_prod2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button 
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/lt_top"
+            android:id="@+id/btn_compare_prod"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:text="对比" />
+
+</RelativeLayout>

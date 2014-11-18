@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+               android:gravity="center"
+            android:id="@+id/btnStepChooseProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/market_progress1"
+            android:text="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#D7C094" />
+
+        <Button
+               android:gravity="center"
+            android:id="@+id/btnStepBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/market_progress2"
+            android:text="2" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#D7C094" />
+
+        <Button
+               android:gravity="center"
+            android:id="@+id/btnStepSignContract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/market_progress1"
+            android:text="3" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#D7C094" />
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/btnStepCreateOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/market_progress1"
+            android:text="4" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#D7C094" />
+
+        <Button
+            android:id="@+id/btnStepPayResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/market_progress1"
+            android:text="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtStepChooseProduct"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择产品" />
+
+        <TextView
+            android:id="@+id/txtStepBind"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="绑定协议" />
+
+        <TextView
+            android:id="@+id/txtStepSignContract"
+            style="@style/Txt18Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="合同签订" />
+
+        <TextView
+            android:id="@+id/txtStepCreateOrder"
+            style="@style/Txt18Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="订单支付" />
+
+        <TextView
+            android:id="@+id/txtStepPayResult"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易结果" />
+    </LinearLayout>
+
+</LinearLayout>

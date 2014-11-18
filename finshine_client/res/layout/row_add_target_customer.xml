@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/cb_selete_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/common_check_box_select"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/imageBarTop"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ts_avatar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张中华"
+                    style="@style/Txt18Gray808080" />
+
+                <TextView
+                    style="@style/Txt16Gray808080" 
+                    android:id="@+id/tv_textAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="45岁" />
+
+                <TextView
+                      style="@style/Txt16Gray808080" 
+                    android:id="@+id/tv_textMarried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已婚" />
+
+                <TextView
+                      style="@style/Txt16Gray808080" 
+                    android:id="@+id/tv_textJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="律师" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lt_state1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_textInvestCurrent"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_right_greeen"
+                    android:text="投资总额:500万" />
+
+                <TextView
+                    android:id="@+id/tv_textInvestTimes"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_right_greeen"
+                    android:text="投资次数：2次" />
+
+                <TextView
+                    android:id="@+id/tv_textInvestMax"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_right_greeen"
+                    android:text="资产总额：200万" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lt_state2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_new_customer"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="新客户" />
+ 
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纪要：" />
+
+            <TextView
+                style="@style/Txt14Graybfbfbf"
+                android:id="@+id/tv_textRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="律师事务所负责人" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

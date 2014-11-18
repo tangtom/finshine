@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_cs_data_analyise"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="敬请期待！！！" />
+
+    <Button
+        android:id="@+id/btnPointerMarket"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@color/background_gray_d0bd9c"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

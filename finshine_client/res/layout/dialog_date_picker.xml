@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center">
+	
+	<com.custom.view.datepicker.DateDrumPicker
+		android:id="@+id/datepicker" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	
+	<LinearLayout 
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+		    android:id="@+id/buttonOK"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/common_button_ok" />
+
+		<Button
+		    android:id="@+id/buttonCancel"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="@string/common_button_cancel" />
+
+	</LinearLayout>
+</LinearLayout>

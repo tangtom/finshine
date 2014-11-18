@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="product_more_h">40dip</dimen>
+    <dimen name="product_more_w">300dip</dimen>
+    
+    <dimen name="line">1px</dimen>
+    <dimen name="pull_refresh_pg_size">25dp</dimen>
+    
+    <dimen name="icon_width">240dp</dimen>
+    <dimen name="icon_height">120dp</dimen>
+    
+</resources>

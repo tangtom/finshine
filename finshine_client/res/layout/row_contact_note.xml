@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_list_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_title"
+            style="@style/TextGary838383"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_cbi_contact_history"
+            android:drawablePadding="20dp"
+            android:text="@string/cm_content_summary"
+            android:textSize="18sp"  />
+
+        <TextView
+            android:id="@+id/textDate"
+            style="@style/Txt18Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="2014年04月05日" />
+
+        <TextView
+            android:id="@+id/textTime"
+            style="@style/Txt18Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="40dp"
+            android:gravity="left"
+            android:text="12:30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/imageBarBottom"
+            android:layout_width="@dimen/line"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_cbi_list_bar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_list_circle" />
+
+        <View
+            android:id="@+id/imageBarBottom"
+            android:layout_width="@dimen/line"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_cbi_list_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bg_contact_summery"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textDescription1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="left|top"
+             android:padding="5dp"
+            android:text="投资经历"
+            android:textColor="@color/text_gray_808080"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:paddingRight="-20dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/table_row_line" />
+
+        <TextView
+            android:id="@+id/textDescription2"
+            style="@style/Txt18Graybfbfbf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="投资经历\n\n\n\n" />
+    </LinearLayout>
+
+</LinearLayout>

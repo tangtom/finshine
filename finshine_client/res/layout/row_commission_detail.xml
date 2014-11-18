@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="12dip"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgCommission"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/no_pic_commission" />
+
+        <TextView
+            android:id="@+id/textPropName"
+            style="@style/Txt18Gray808080"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="佣金券0.1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textSeekBarProgress"
+            style="@style/Txt18Gray808080"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:paddingBottom="2dip"
+            android:text="0" />
+
+        <SeekBar
+            android:id="@+id/seekbarCommission"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="450dip"
+            android:layout_height="45dip"
+            android:paddingLeft="0dip"
+            android:paddingRight="0dip"
+            android:progress="2"
+            android:progressDrawable="@layout/seekbar_style"
+            android:thumb="@layout/seekbar_thumb" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textUsedMaxQty"
+        style="@style/Txt18Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="1/3" />
+
+    <TextView
+        style="@style/Txt18Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="5dip"
+        android:text="剩" />
+
+    <TextView
+        android:id="@+id/textRemaining"
+        style="@style/Txt18Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:paddingRight="5dip"
+        android:text="15" />
+
+    <TextView
+        style="@style/Txt16Redff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="5dip"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textSubtotalRatio"
+        style="@style/Txt16Redff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_gravity="center_vertical"
+        android:text="0.4" />
+
+</LinearLayout>

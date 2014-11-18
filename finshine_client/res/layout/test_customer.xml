@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCreateCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="新建客户" />
+
+        <Button
+            android:id="@+id/btnGetCustomerList"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取客户列表" />
+
+        <Button
+            android:id="@+id/btnGetSingleCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取单个客户" />
+
+        <Button
+            android:id="@+id/btnUpdateCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="更新客户" />
+
+        <Button
+            android:id="@+id/btnCreateContact"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="新增联系纪要" />
+
+        <Button
+            android:id="@+id/btnGetContact"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取联系纪要" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnUpdateAsset"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="更新资产信息" />
+
+        <Button
+            android:id="@+id/btnGetAsset"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取资产信息" />
+
+        <Button
+            android:id="@+id/btnUpdateIncome"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="更新收支信息" />
+
+        <Button
+            android:id="@+id/btnGetIncome"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取收支信息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnGetSingleCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="上传头像" />
+
+        <Button
+            android:id="@+id/btnUpdateCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="下载头像" />
+
+        <Button
+            android:id="@+id/btnDeleteCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="上传正面" />
+
+        <Button
+            android:id="@+id/btnDeleteCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="下载正面" />
+
+        <Button
+            android:id="@+id/btnUpdateCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="上传背面" />
+
+        <Button
+            android:id="@+id/btnDeleteCustomer"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="下载背面" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

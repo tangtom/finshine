@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_market_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/educationBox"
+            style="@style/Txt18Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:button="@drawable/common_check_box_select"
+            android:paddingLeft="10dp"
+            android:text="显示大于3个月前的订单" />
+        
+        <Button
+            android:id="@+id/btn_add_customer"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="380dp"
+            style="@style/CommonButtonRadiusBrownd"
+            android:text="新客户交易"
+            android:paddingTop="0dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/add_shape"
+        />
+
+        <LinearLayout
+            android:id="@+id/input_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/product_outside_line"
+            android:orientation="horizontal" >
+
+            <!-- <EditText
+                android:id="@+id/et_search_text"
+                style="@style/Txt18Graybfbfbf"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="请输入客户姓名"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" /> -->
+                
+            <EditText
+                    android:id="@+id/et_search_text"
+                    style="@style/Txt14Gray808080"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/search_customer_name"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_search_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前进行中：" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="客户总数：" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="已绑定：" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="历史销售：" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="款" />
+
+        <Button
+            android:id="@+id/btnMarketingChance"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/customer_market_line"
+            android:text="发现5个营销机会" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="48dp"
+            android:background="@drawable/product_outside_line"
+            android:text="订单管理" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/text_gray_bfbfbf" />
+
+    <ExpandableListView
+        android:id="@+id/elist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:childDivider="@color/text_gray_bfbfbf"
+        android:divider="@color/text_gray_bfbfbf"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

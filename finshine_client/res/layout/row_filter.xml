@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+     android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+      >
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/Txt18Gray808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+          />
+
+    <RadioButton
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/rbSignalSel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+    
+     <CheckBox
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

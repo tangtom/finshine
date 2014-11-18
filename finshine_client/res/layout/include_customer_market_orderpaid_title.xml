@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="订单编号：" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="208849990033" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="生成时间：" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-05-23  "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="订单总额：" />
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/Txt20Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300万" />
+
+        <TextView
+            style="@style/Txt20Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="订单状态：" />
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/Txt18Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="已成交" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+</LinearLayout>

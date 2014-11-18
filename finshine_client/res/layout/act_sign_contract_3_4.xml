@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="专项资产管理计划交易业务申请书(个人)"
+            android:textColor="#D7C093"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="923dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="918dp"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:src="@drawable/ic_cbi_contact_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="投资人说明"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginTop="10dp"
+            android:text="本机构/本人" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginTop="10dp"
+            android:text="已经仔细阅读了本计划的《资产管理合同》，《投资说明书》等相关法律文件，已充分理解上述文件的法律涵义及相应的法律后果并充分理解相关权利义务。" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="本机构/本人保证所提供的资料真实、有效，并自愿履行资产管理计划投资人的各项义务，自行承担资产管理投资风险，并确认本申请表所填信息之真实性和准确性。" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="本机构/本人保证用于投资和交易的资金来源合法，本机构/本人进行投资和交易之行为符合中华人民共和国各项法律、法规和规定。" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="本机构/本人已完成风险承受能力评测和评估，充分认识本机构/本人风险承受能力，并确认已全面认识了本计划产品的风险收益特征并充分考虑了自身的风险承受能力。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_required" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="申请人签名" />
+
+        <ImageView
+            android:id="@+id/btnPlanTableSign"
+            android:src="@drawable/bg_sign" 
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+             />
+
+        <TextView
+            android:id="@+id/txtPlanTableSignDate"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp"
+            android:layout_marginTop="10dp"
+            android:text="2014年7月31日" />
+    </LinearLayout>
+
+</RelativeLayout>

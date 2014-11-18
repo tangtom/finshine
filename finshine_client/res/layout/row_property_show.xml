@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    
+    >
+
+    <RelativeLayout
+        android:id="@+id/propertyBorder"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imgPropertyPicture1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/row_property" />
+     
+        <TextView
+            android:id="@+id/totalQty"
+            style="@style/Txt14Whiteffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@color/text_brown_d7c093"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            />
+
+       
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/propertyName"
+        style="@style/Txt14Gray808080"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:text="我的佣金..." />
+
+</LinearLayout>

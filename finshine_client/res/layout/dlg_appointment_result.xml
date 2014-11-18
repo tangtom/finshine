@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+   
+<LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="387dp"
+        android:background="@drawable/appointment_back"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        
+        <TextView
+            style="@style/TextGary838383"
+            android:layout_width="331dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="产品预约"
+            android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp" >
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/Txt18Gray808080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的信誉" />
+
+                    <ImageView
+                        android:id="@+id/imageDiamond1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_zhuan" />
+
+                    <ImageView
+                        android:id="@+id/imageDiamond2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_zhuan" />
+
+                    <ImageView
+                        android:id="@+id/imageDiamond3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_zhuan" />
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                android:id="@+id/productName"
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银企众盈188" />
+           <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1元 = 1份" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_required"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约成功" />
+
+            <TextView
+                android:id="@+id/appNum"
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp" />
+            
+            <TextView
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="万份" />
+        </LinearLayout>
+       
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_required"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已销售" />
+
+            <TextView
+                android:id="@+id/appNumSale"
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp" />
+            <TextView
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="万份" />
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="剩余" />
+
+            <TextView
+                android:id="@+id/appNumRemain"
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp" />
+           <TextView
+                style="@style/Txt18Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="万份" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                style="@style/Txt16Redff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对不起 ！您预约的份额不足" />
+            
+            <TextView
+                android:id="@+id/txtRemainNum"
+                style="@style/Txt16Redff0000"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+            
+            <TextView
+                style="@style/Txt16Redff0000"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="/" />
+            
+            <TextView
+                android:id="@+id/txtTotalNum"
+                style="@style/Txt16Redff0000"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+           <TextView
+                android:id="@+id/txtRemainNum"
+                style="@style/Txt16Redff0000"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="万" /> 
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                style="@style/Txt16Redff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对不起 ！您尚未预约，请先预约份额" />
+            
+            <TextView
+                android:id="@+id/txtRemainNum"
+                style="@style/Txt16Redff0000"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/layPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="追加份额，请联系" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape" />
+            
+           <TextView
+                android:id="@+id/productName"
+                style="@style/Txt18Brownd7c093"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发行商客服" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_add_invester"
+                style="@style/ButtonBrownColor"
+                android:layout_width="93dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:text="确定" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

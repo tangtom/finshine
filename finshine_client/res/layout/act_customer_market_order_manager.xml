@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_list_item_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <Button
+            android:id="@+id/btnFilter"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="580dp"
+            android:focusable="false"
+            android:text="筛选" />
+
+        <LinearLayout
+            android:id="@+id/input_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/product_outside_line"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search_text"
+                style="@style/Txt12Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:focusable="true"
+                android:gravity="center_vertical|left"
+                android:hint="请输入客户姓名或订单编号"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_search_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_filter_small"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付结果" />
+
+            <Spinner
+                android:id="@+id/spinnerOrderType"
+                style="@style/Txt18Gray808080"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="购买结果" />
+
+            <Spinner
+                android:id="@+id/spinnerSaledResult"
+                style="@style/Txt18Gray808080"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="订单时间" />
+
+            <EditText
+                android:id="@+id/editOrderDate"
+                style="@style/Txt18Gray808080"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="300dp"
+                android:background="@drawable/bg_spninner"
+                android:drawableRight="@drawable/ic_date"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonReset"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="重置条件" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="搜索" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/customer_market_linearlayout_graybg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.5"
+            android:text="订单编号/生成时间" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.7"
+            android:text="客户姓名" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="产品名称" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="订单金额" />
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="支付结果/购买结果" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listHistoricOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dp"
+        android:divider="@color/line_gray_c5ccd2"
+        android:dividerHeight="@dimen/line"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

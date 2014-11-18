@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_corp_logo" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/image_version_number"
+                android:gravity="top|center"
+                android:textColor="@color/text_white_ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:drawableRight="@drawable/ic_user"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text="u0000001" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableRight="@drawable/ic_lock"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:text="123456" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:text="@string/app_login"
+            android:textColor="@color/text_gray_808080"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login" >
+    </RelativeLayout>
+
+</LinearLayout>

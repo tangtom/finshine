@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 客户职业列表 -->
+    <string-array name="customer_job">
+        <item>保密</item>
+        <item>政府部门</item>
+        <item>教科文</item>
+        <item>金融</item>
+        <item>商贸</item>
+        <item>房地产</item>
+        <item>制造业</item>
+        <item>自由职业</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 客户行业列表 -->
+    <string-array name="customer_industry">
+        <item>计算机硬件</item>
+        <item>计算机软件</item>
+        <item>互联网</item>
+        <item>IT管理</item>
+        <item>IT支持</item>
+        <item>通信</item>
+        <item>销售管理</item>
+        <item>销售人员</item>
+        <item>客服与技术支持</item>
+        <item>销售行政及商务</item>
+        <item>财务</item>
+        <item>金融</item>
+        <item>保险</item>
+        <item>营运</item>
+        <item>汽车</item>
+        <item>技工</item>
+        <item>采购</item>
+        <item>物流</item>
+        <item>贸易</item>
+        <item>机械</item>
+        <item>电子</item>
+        <item>生物</item>
+        <item>医疗</item>
+        <item>化工</item>
+        <item>公关</item>
+        <item>建筑</item>
+        <item>广告</item>
+        <item>市场</item>
+        <item>影视</item>
+        <item>艺术</item>
+        <item>写作</item>
+        <item>房地产</item>
+        <item>物业</item>
+        <item>人力资源</item>
+        <item>高级管理</item>
+        <item>法律顾问</item>
+        <item>教师</item>
+        <item>科研人员</item>
+        <item>酒店</item>
+        <item>美容</item>
+        <item>体育</item>
+        <item>家政</item>
+        <item>公务员</item>
+        <item>翻译</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="married_status">
+        <item>保密</item>
+        <item>未婚</item>
+        <item>已婚</item>
+    </string-array>
+    <string-array name="sort_time_preferenct">
+        <item>1-6个月</item>
+        <item>6-12个月</item>
+        <item>12-24个月</item>
+        <item>24个月以上</item>
+    </string-array>
+    
+     <!-- 收入列表 -->
+    <string-array name="customer_income">
+        <item>保密</item>
+        <item>10万以下</item>
+        <item>10万-50万</item>
+        <item>50万-100万</item>
+        <item>100万以上</item>
+    </string-array>
+
+</resources>

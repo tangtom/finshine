@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.custom.view.OverrideLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginLeft="20dp"
+        android:duplicateParentState="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="62dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="left|center"
+                android:text="【" />
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="】" />
+
+            <TextView
+                android:id="@+id/tv_task_date"
+                style="@style/Txt16Gray808080"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="left|center" />
+
+            <TextView
+                android:id="@+id/tv_task_content"
+                style="@style/Txt16Gray808080"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_task_accept"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</com.custom.view.OverrideLinearLayout>

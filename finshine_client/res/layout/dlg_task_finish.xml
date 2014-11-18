@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lt_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/task_dialog_background"
+    android:orientation="vertical" >
+
+    <!-- going on start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textTaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Txt16Whiteffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textTaskDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="任务进行中"
+            style="@style/Txt16Brownd7c093" />
+
+        <TextView
+            android:id="@+id/tv_task_goingon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="剩余"
+            style="@style/Txt12Redff0000" />
+
+        <TextView
+            android:id="@+id/tv_task_goingon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            style="@style/Txt12Redff0000" />
+
+        <TextView
+            android:id="@+id/tv_task_goingon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            style="@style/Txt12Redff0000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageTaskTarget"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seekbaroff" />
+
+            <ImageView
+                android:id="@+id/imageTask"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seekbaron" />
+
+            <ImageView
+                android:id="@+id/iv_task_timeout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="15dp"
+                android:layout_weight="4"
+                android:src="@drawable/task_finish_logo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- going on end -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt16Whiteffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务提示" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/task_finish_head" />
+
+        <TextView
+            style="@style/Txt16Orangeff8b23"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="恭喜你！任务完成！" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_task_finish1"
+            style="@style/Txt16Brownd7c093"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="难度" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/Txt16Brownd7c093"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|center"
+        android:text="说明" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textTaskContent1"
+            style="@style/Txt16Gray808080"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_task_finish6"
+        style="@style/Txt16Brownd7c093"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="完成条件" />
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textTaskCondition1"
+            style="@style/Txt16Gray808080"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="7" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_task_process"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+
+            <TextView
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/tv_task_target"
+                style="@style/Txt16Orangeff8b23"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:text="奖励"
+        style="@style/Txt16Brownd7c093" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBonuses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:src="@drawable/task_finish_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_accept"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="确定" />
+
+</LinearLayout>

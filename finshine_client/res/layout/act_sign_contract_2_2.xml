@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托人风险评估表"
+            android:textColor="#D7C093"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_required" />
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="1.您目前所处的年龄阶段"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp" >
+
+            <RadioButton
+                android:id="@+id/rdoOption1"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24岁以下/60以上（1分）"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdoOption2"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25~34岁（4分）"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdoOption3"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40~49（3分）"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdoOption4"
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50~59岁（2分）"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

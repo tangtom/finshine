@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;银企众盈&quot;融资项目火爆预告"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/postTime"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/author"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/resource"
+            style="@style/Txt14Graybfbfbf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

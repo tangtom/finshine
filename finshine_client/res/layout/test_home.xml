@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCreateTodo"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="新建日程" />
+
+        <Button
+            android:id="@+id/btnGetTodoList"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取区间日程" />
+
+        <Button
+            android:id="@+id/btnGetSingleTodo"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="获取单个日程" />
+
+        <Button
+            android:id="@+id/btnUpdateTodo"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="更新日程" />
+         <Button
+            android:id="@+id/btnDeleteTodo"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="删除日程" />
+    </LinearLayout>
+
+   <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

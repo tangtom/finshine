@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/my_pointer_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white_ffffff"
+        android:orientation="vertical" >
+	
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:id="@+id/sortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+          <!--  <Button
+	            android:id="@+id/buttonSortDefault"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+	            style="@style/CommonButton"
+	            android:background="@color/background_gray_d0bd9c"
+	            android:text="默认排序" />
+
+
+            <Button
+	            android:id="@+id/buttonTransactionTime"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+	            style="@style/CommonButton"
+	            android:text="成交时间" />
+
+
+            <Button
+	            android:id="@+id/buttonProductName"
+	            android:layout_width="100dp"
+	            android:layout_height="35dp"
+	            style="@style/CommonButton"
+	            android:text="产品名称" />
+
+
+            
+                SearchView
+                    android:id="@+id/searchView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp" >
+                </SearchView>
+            -->
+
+            <Button
+                android:id="@+id/btnFilter"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="260dp"
+                android:text="筛选" />
+
+            <LinearLayout
+                android:id="@+id/input_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/product_outside_line"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_search_text"
+                    style="@style/Txt12Gray808080"
+                    android:layout_width="145dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="请输入客户姓名或订单编号"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/product_search_icon" />
+            </LinearLayout>
+        </LinearLayout>        
+
+		<LinearLayout
+		    android:id="@+id/layoutFilter"
+		    android:layout_width="match_parent"
+		    android:layout_height="138dp"
+		    android:background="@drawable/my_pointer_filter_bg"
+		    android:orientation="vertical"
+		    android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状   态" />
+
+                <Spinner
+                    android:id="@+id/spinnerPointer"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/order_status"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="订单日期" />
+                
+				<EditText
+                    android:focusable="false"
+                    android:id="@+id/editOrderDate"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="300dp"
+                    android:background="@drawable/bg_spninner"
+                    android:drawableRight="@drawable/ic_date"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:text="重置条件" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="搜索" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="15dp"
+        android:background="#d4d4d4" />
+        <ListView
+            android:id="@+id/listPointerOrder"
+            android:layout_marginTop="0dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:divider="@color/text_gray_bfbfbf"
+            android:dividerHeight="1dp">
+        </ListView>
+        <TextView
+            android:id="@+id/txtNoResult"
+            android:visibility="gone"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="20dip"
+            android:text="对不起没有符合查询条件的结果" />
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="#d4d4d4" />
+    </LinearLayout>
+
+</LinearLayout>

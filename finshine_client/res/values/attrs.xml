@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="expand_button">
+        <attr name="custom_id" format="integer" />
+        <attr name="src" format="reference" />
+        <!-- <attr name="background" format="reference" /> -->
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

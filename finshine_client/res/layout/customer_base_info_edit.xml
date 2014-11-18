@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <!-- 未使用 -->
+    <LinearLayout
+        android:id="@+id/mainLinaerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imageBarTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ts_avatar2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textName"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*姓名：" />
+
+                    <EditText
+                        android:id="@+id/editName"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="text" >
+                    </EditText>
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="地区:" />
+
+                    <Spinner
+                        android:id="@+id/spinnerProvince"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="投资" />
+
+                    <EditText
+                        android:id="@+id/editInvestNumber"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次" />
+
+                    <!--  
+                    <Button
+                        android:id="@+id/confirmBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="保存" />
+
+                    <Button
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="取消" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别：" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            style="@style/Txt18Graybfbfbf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            style="@style/Txt18Graybfbfbf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="女" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="年收入：" />
+
+                    <EditText
+                        android:id="@+id/editAnnualIncome"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textAge"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年龄：" />
+
+                    <EditText
+                        android:id="@+id/editAge"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="岁" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:text="资产总额：" />
+
+                    <EditText
+                        android:id="@+id/editTotalAsset"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:ems="10" />
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万" />
+
+                    <TextView
+                        android:id="@+id/textCellPhone1"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:text="*电话：" />
+
+                    <EditText
+                        android:id="@+id/editCellPhone1"
+                        android:layout_width="180dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历：" />
+
+                    <Spinner
+                        android:id="@+id/spinnerEducation"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="投资总额：" />
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万" />
+
+                    <TextView
+                        android:id="@+id/textEmail1"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:text="邮箱：" />
+
+                    <EditText
+                        android:id="@+id/editEmail1"
+                        android:layout_width="180dp"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职业：" />
+
+                    <Spinner
+                        android:id="@+id/spinnerProfession"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="投资来源：" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxInvestSource1"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工资" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxInvestSource2"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="奖金" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxInvestSource3"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="退休金" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textKeyword"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关键字：" />
+
+                    <EditText
+                        android:id="@+id/editKeyword"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:ems="10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6D7BA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本资料"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称:" />
+
+                <EditText
+                    android:id="@+id/editNickName"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:ems="10" >
+                </EditText>
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="工作单位:" />
+
+                <EditText
+                    android:id="@+id/editEmployer"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国籍:" />
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="235dp"
+                    android:text="职务:" />
+
+                <EditText
+                    android:id="@+id/editPosition"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日:" />
+
+                <EditText
+                    android:id="@+id/editBirthday"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_edit"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:text="投资偏好:" />
+
+                <Spinner
+                    android:id="@+id/spinnerInvest"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="婚姻:" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupMarried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioMarried1"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未知" />
+
+                    <RadioButton
+                        android:id="@+id/radioMarried2"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="未婚" />
+
+                    <RadioButton
+                        android:id="@+id/radioMarried3"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="已婚" />
+
+                    <RadioButton
+                        android:id="@+id/radioMarried4"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="离异" />
+
+                    <RadioButton
+                        android:id="@+id/radioMarried5"
+                        style="@style/Txt18Graybfbfbf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="丧偶" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家庭成员:" />
+
+                <EditText
+                    android:id="@+id/editFamilyInfo"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系地址:" />
+
+                <EditText
+                    android:id="@+id/editContactAddress"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="紧急联系人姓名:" />
+
+                <EditText
+                    android:id="@+id/editEcName"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="居住地址:" />
+
+                <EditText
+                    android:id="@+id/editResidentialAddress"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="紧急联系人手机:" />
+
+                <EditText
+                    android:id="@+id/editEcellPhone"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="座机号码:" />
+
+                <EditText
+                    android:id="@+id/editTelephone"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="phone" />
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:text="紧急联系人关系:" />
+
+                <EditText
+                    android:id="@+id/editEcRelation"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传真号:" />
+
+                <EditText
+                    android:id="@+id/editFax"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text="社交号码:" />
+
+                <EditText
+                    android:id="@+id/editSocialNumber"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Txt18Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮编:" />
+
+                <EditText
+                    android:id="@+id/editZipcode"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:ems="10" />
+            </LinearLayout>
+            
+        </LinearLayout>
+            
+    </LinearLayout>
+
+</ScrollView>

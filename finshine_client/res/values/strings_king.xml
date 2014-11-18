@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="customer_add_dialog_state">
+        <item>意向客户</item>
+        <item>有效跟进中</item>
+    </string-array>
+    <string-array name="customer_update_dialog_state">
+        <item>意向客户</item>
+        <item>有效跟进中</item>
+        <item>有效放弃</item>
+        <item>无效</item>
+    </string-array>
+    <string-array name="customer_state">
+        <item>意向客户</item>
+        <item>有效跟进中</item>
+        <item>有效放弃</item>
+        <item>无效</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="baseinfo_relation">
+        <item>配偶</item>
+        <item>子女</item>
+        <item>父亲</item>
+        <item>母亲</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="portfolio_array">
+        <item>保守型配置</item>
+        <item>稳健性配置</item>
+        <item>进取型配置</item>
+    </string-array>
+
+    <string name="counselor_1">开发客户：%1$s位</string>
+    <string name="counselor_2">拜访客户：%1$s位</string>
+    <string name="counselor_3">采集客户：%1$s位</string>
+    <string name="counselor_4">成功意签：%1$s位</string>
+
+    <!-- network message -->
+    <!-- <string name="errcode_network_response_no_data">暂时没有新数据</string> -->
+    <string name="errcode_network_response_no_data">对不起:未找到相关客户</string>
+    <string name="errcode_network_unavailable">网络连接不可用</string>
+    <string name="errcode_network_json_exception">服务器数据不正确</string>
+    <string name="errcode_network_response_timeout">连接服务器超时，请重试！</string>
+    <string name="errcode_network_database_io">数据库错误</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="no_data">没有内容，刷新一下试试</string>
+    <string name="errcode_network_cookie_required">授权已过期，请重新登录</string>
+    <!-- network message -->
+
+    <string name="customer_search_hint">请输入客户姓名</string>
+    <string name="imageview_default">picture</string>
+    <string name="btn_edit">修改</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_back">返回</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="customer_state_youxiao">意向客户</string>
+    <string name="customer_state_genjin">有效跟进中</string>
+    <string name="customer_state_fangqi">有效放弃</string>
+    <string name="customer_state_wuxiao">无效</string>
+
+    <!-- 登陆的界面 -->
+    <string name="login_bottom_text">本软件仅供上海景淳投资管理有限公司及其相关公司内部员工使用，未经公司同意 不得对外展示</string>
+    <string name="login_passwordedt_hint">密码</string>
+    <string name="login_account_hint">用户名</string>
+    <!-- 登陆的界面 -->
+
+
+    <!-- 日期对话框选择界面 -->
+    <string name="date_dialog_table_bar">请选择起始日期和结束日期</string>
+    <!-- 日期对话框选择界面 -->
+
+
+    <!-- TODO级别选择对话框 -->
+    <string name="urgency_dialog_table_bar">优先级</string>
+    <string name="urgency_dialog_grade_1">1（低）</string>
+    <string name="urgency_dialog_grade_2">2（中）</string>
+    <string name="urgency_dialog_grade_3">3（高）</string>
+    <string name="urgency_dialog_grade_4">4（最高）</string>
+    <!-- TODO级别选择对话框 -->
+
+
+    <!-- home界面 -->
+    <string name="home_products_btn">产品列表</string>
+    <string name="home_synchronous_btn">同步</string>
+    <!-- home界面 -->
+
+
+    <!-- 客户管理和客户库List列表 -->
+    <string name="customer_library">客户库</string>
+    <string name="customer_add_btn">创建客户</string>
+    <string name="customer_bar_name">姓名</string>
+    <string name="customer_bar_sex">性别</string>
+    <string name="customer_bar_age">年龄</string>
+    <string name="customer_bar_phone">手机</string>
+    <string name="customer_bar_phone_four">手机后四位</string>
+    <string name="customer_bar_email">邮箱</string>
+    <string name="customer_bar_state">客户状态</string>
+    <!-- 客户管理和客户库List列表 -->
+
+
+    <!-- 添加修改客户Dialog -->
+    <string name="customer_dialog_name">姓名</string>
+    <string name="customer_dialog_sex">性别</string>
+    <string name="customer_dialog_phone">电话</string>
+    <string name="customer_dialog_age">生日</string>
+    <string name="customer_dialog_job">职业</string>
+    <string name="customer_dialog_email">邮箱</string>
+    <string name="customer_dialog_state">客户状态</string>
+    <string name="customer_dialog_memo">说明</string>
+    <string name="add_customer_ok">客户信息创建成功</string>
+    <string name="add_customer_fail_has">客户信息创建失败，客户已存在</string>
+    <string name="add_customer_fail">客户信息创建失败</string>
+    <string name="edit_customer_ok">客户信息修改成功</string>
+    <string name="edit_customer_fail">客户信息修改失败</string>
+    <!-- 添加修改客户Dialog -->
+
+
+    <!-- 客户跟进的Fragment -->
+    <string name="operate_order">请按顺序执行操作</string>
+    <string name="operate_complete">请先完成客户信息采集</string>
+    <!-- 客户跟进的Fragment -->
+
+
+    <!-- 采集客户信息Activity -->
+    <string name="collect_info_aty_title">保密协议</string>
+    <string name="collect_info_aty_radiobtn_1">保密协议</string>
+    <string name="collect_info_aty_radiobtn_2">客户信息</string>
+    <string name="collect_info_aty_radiobtn_3">风险偏好</string>
+    <string name="collect_info_aty_sign_first">请先签名</string>
+    <!-- 采集客户信息Activity -->
+
+
+    <!-- 采集客户信息_保密协议 -->
+    <string name="jiafang1">甲方：</string>
+    <string name="jiafang2">景淳国际创富理财有限公司</string>
+    <string name="yifang">乙方：</string>
+    <string name="jianyu">鉴于：</string>
+    <string name="jianyu1">（1）甲方为乙方提供理财规划服务；</string>
+    <string name="jianyu21">（2）在理财规划服务的实施过程中，甲乙双方向对方提供有关保密信息，且该保密信息属甲乙双方合法所有；</string>
+    <string name="jianyu3">（3）甲乙双方希望对本合同所述保密信息予以有效保护。</string>
+    <string name="shuangfang">双方对合同条款确认如下：</string>
+    <string name="di1">第一条 保密信息的定义</string>
+    <string name="di11">保密信息”是指乙方所持有的以口头、书面、数码或其他形式向甲方提供或透露的个人隐私或者商业秘密，包括且不限于：
+      \n（1） 乙方的财务状况及家庭情况的相关资料文件；
+      \n（2） 乙方通过面谈、电话交流和网络交流向甲方所提供的信息；
+      \n（3） 乙方及家人接受甲方所进行的相关调查问卷的资料。</string>
+    <string name="di12">甲方所持有的以口头、书面、数码或其他形式向乙方提供或透露的商业机密、贸易机密、操作信息、技术信息，以及所有不被公开知道的，或与商务或财务相关的信息，包括且不限于：
+      \n（1） 财务信息、开户银行资料、组织架构、股东资料等；
+      \n（2） 公司知识产权（不论是公司独自拥有的，或是和其他方共同拥有的，亦不论是现有的，或将来开拓发展的），包括但不限于公司或产品的商标，有关文档资料的著作权，专利及非专利技术、商业秘密等。</string>
+    <string name="di2">第二条 乙方权利与义务</string>
+    <string name="di22">1、乙方必须保证其向甲方所提供信息内容的真实准确；
+      \n2、在理财规划建议书的制定及执行过程中，乙方所提供的信息发生重大变化的，乙方应当及时告知甲方；
+      \n3、对甲方为其制定的理财规划建议书，乙方只得自己使用，未经甲方许可，不得许可给任何第三方使用，或在报刊、杂志、网络或其他载体予以发表或披露。</string>
+    <string name="di3">第三条 甲方权利与义务</string>
+    <string name="di33">1、甲方保证对乙方提供的保密信息予以妥善保存，至少采取适用于对自己保密信息同样的保护措施和审慎程度进行保密。
+        \n2、甲方对由于工作需要而知道保密信息的理财规划师或者其他雇员，应该告知该信息的机密性质并在甲方的指导下以机密的方式对待此类信。</string>
+    <string name="di34">3、上述限制条款不适用于以下情况：
+      \n （1） 在签署本合同之时或之前，保密信息已以合法方式属甲方所有；
+      \n （2） 保密信息在通知给甲方时，已经公开或能从公开领域获得；
+      \n （3） 保密信息是甲方从与其没有保密或不透露义务的第三方获得的；
+      \n （4） 在不违反本合同项下约定责任的前提下，保密信息已经公开或能从公开领域获得；
+      \n （5） 甲方响应法院或其他法律、行政管理部门要求披露的信息（通过口头提问、询问、要求资料或文件、传唤、民事或刑事调查或其他程序）因而透露保密信息，在该种情况发生时，应立即向乙方发出通知，并做出必要说明。
+      \n4、甲方应保留与此合同有关的，正确的文件和档案，并且应按乙方的要求向乙方提供这类记录信息。
+      \n5、甲方应允许乙方在所有合理的时间检查和稽查所有与此合同相关的文件和档案。
+      \n6、乙方提供的保密信息，如涉及侵犯第三方知识产权的情况，甲方对此侵权行为不负责，且免于由此产生的索赔。
+      \n7、保密义务不因本合同及本合同事项的中止、终止而解除。</string>
+    <string name="di4">第四条 违约责任</string>
+    <string name="di44">未履行本合同项下的条款被视为违约。做出违约行为的一方应承担因自己的违约行为而给守约方造成的损失。守约方有权采取要求其停止损害、实际履行、赔偿损失以及其他合理的救济措施。</string>
+    <string name="di5">第五条 适用法律及管辖</string>
+    <string name="di55">1、本合同根据中华人民共和国法律解释。
+       \n2、任何因本合同的解释及执行而产生的争议，应首先由双方通过友好协商和（或）经由中立第三方调解来解决。如争议未能于前述方式解决，则任何一方均有权将纠纷提交北京市仲裁委员会，依该会仲裁规则进行仲裁。</string>
+    <string name="di6">第六条 未经双方书面确认，任何一方不得变更或修改本合同，法律另有规定的除外。</string>
+    <string name="signature">签章：</string>
+    <string name="date">日期：</string>
+    <string name="signature_ok_toast">您与景淳投资已签署保密协议，您的资料将已加密形式进行保存</string>
+    <!-- 采集客户信息_保密协议 -->
+
+
+    <!-- 写字板dialog -->
+    <string name="btn_save">保存</string>
+    <string name="btn_clear">清除</string>
+    <!-- 写字板dialog -->
+
+
+    <!-- 采集客户信息_客户信息_TITLE -->
+    <string name="jiating">家庭基本情况</string>
+    <string name="jiazi">家庭资产负债状况</string>
+    <string name="niandu">家庭年度收支状况</string>
+    <string name="jiabao">家庭保险状况</string>
+    <string name="licai">理财目标</string>
+    <!-- 采集客户信息_客户信息_TITLE -->
+
+
+    <!-- 采集客户信息_基本信息 -->
+    <string name="collect_baseinfo_name">*姓名：</string>
+    <string name="collect_baseinfo_sex">*性别：</string>
+    <string name="collect_baseinfo_marry">&#160;&#160;婚姻：</string>
+    <string name="collect_baseinfo_marry_has">单身</string>
+    <string name="collect_baseinfo_marry_nothas">已婚</string>
+    <string name="collect_baseinfo_update">上传</string>
+    <string name="collect_baseinfo_age">*生日：</string>
+    <string name="collect_baseinfo_job">&#160;&#160;职业：</string>
+    <string name="collect_baseinfo_phone">*电话：</string>
+    <string name="collect_baseinfo_mail">&#160;&#160;邮箱：</string>
+    <string name="collect_baseinfo_address">户籍地址：</string>
+    <string name="collect_baseinfo_home_address">常住地址：</string>
+    <string name="collect_baseinfo_urgent_people">紧急联系人</string>
+    <string name="collect_baseinfo_memo">&#160;&#160;备注：</string>
+    <string name="collect_baseinfo_family">家庭成员</string>
+    <string name="collect_baseinfo_family_number">赡养人数：</string>
+    <string name="collect_baseinfo_family_ren">人</string>
+    <string name="collect_baseinfo_family_item_name">&#160;&#160;姓名：</string>
+    <string name="collect_baseinfo_family_item_sex">&#160;&#160;性别：</string>
+    <string name="collect_baseinfo_family_item_relation">&#160;&#160;关系：</string>
+    <string name="collect_baseinfo_family_item_age">&#160;&#160;生日：</string>
+    <!-- 采集客户信息_基本信息 -->
+    <string name="customer_increase">新增客户</string>
+    <string name="saved_customer">已存客户</string>
+    <string name="help">帮助</string>
+    <string name="home">首页</string>
+    <!-- 日历日程添加 -->
+    <string name="not_null">(必填)</string>
+    <string name="content">内容：</string>
+    <string name="end">结束：</string>
+    <string name="start">开始：</string>
+    <string name="place">地点：</string>
+    <string name="remark_comment">备注说明</string>
+    <string name="remark">备注：</string>
+    <string name="relevance">关联todo：</string>
+    <string name="reminder">提醒：</string>
+    <string name="confirm">确定</string>
+    <string name="cancel_">取消</string>
+    <string name="delete_dialog_title">确认删除\n%1$s</string>
+    <!-- 客户Grid列表 -->
+    <string name="customer_grid_item_name_default">王女士</string>
+    <string name="customer_grid_item_phone_default">13927114189</string>
+    <string name="customer_grid_item_email_default">283925031@qq.com</string>
+    <string name="info_collect">采集客户信息</string>
+    <string name="plan_confirm">确认规划书</string>
+    <string name="strategy_confirm">确认工具策略</string>
+    <string name="signed">意向签署</string>
+    <!--  -->
+    <string name="customer_title">KINGSTONE</string>
+    <string name="default_risk_memo">随着年龄的增长，健康、医疗、意外等方面风险逐渐增加，所以建议%1$s首先需要添加的是&#160;&#160;&#160;&#160;&#160;险。未雨绸缪，防患于未然是%2$s家庭风险管理的重中之重，%3$s需考虑如何为自己构筑防护墙以抵御风险来临时自己的财务缺口。</string>
+    <!-- 确认理财规划书的FragmentTitle -->
+    <string name="confirm_plan_title_webview">销售分析</string>
+    <string name="confirm_plan_title_foreword">前言</string>
+    <string name="confirm_plan_title_basic_finance_condition">家庭基本情况及财务状况</string>
+    <string name="confirm_plan_title_cash_plan">现金流规划</string>
+    <string name="confirm_plan_title_risk_manage">风险管理</string>
+    <string name="confirm_plan_title_invest_plan">投资规划</string>
+    <string name="confirm_plan_title_adjust_condition">调整后收支状况</string>
+    <string name="confirm_plan_title_later_manage">后续管理</string>
+    <string name="confirm_plan_title_intention_sign">意向签署</string>
+    <!--  -->
+    <string name="confirm_services_title">客户跟进制度</string>
+    <string name="loging">登录中...</string>
+    <string name="synchronic">数据同步</string>
+    <string name="customer_list">客户列表</string>
+    <string name="other">其它</string>
+    <string name="privacy_policy">保密协议</string>
+    <string name="risk_preference">风险偏好</string>
+    <string name="customer_info">客户资料</string>
+    <string name="finance_planning">理财规划书</string>
+    <string name="upload_data">上传数据</string>
+    <string name="download_data">下载更新</string>
+    <string name="signintention">请您仔细阅读本建议书，以确保这些信息的准确无误。如果有发生变化，请及时通知我司，以便对理财方案做出及时的调整，同时我们也会定期提供理财咨询并回顾您的账户情况，以便使您和您的家庭能够做出合理的判断。
+    \n凡事预则立，不预则废。%1$s要实现家庭财务的良好管理需要早作规划、专业规划。但规划再好只是纸上谈兵，理财重在执行、贵在坚持。理财对每个家庭来说，既是一项日常执行的具体事务，也是需要用一生的实践来达成的长期目标。</string>
+    <string name="delay">待成交</string>
+    <string name="dealt">已成交</string>
+    <string name="edit_photo_upload_faild">上传头像失败</string>
+    <string name="errcode_take_photo">获取图片失败</string>
+    <string name="edit_profile_photo_selector_camera">照相机</string>
+    <string name="edit_profile_photo_selector_gallery">图库</string>
+    <!--  -->
+
+
+    <!-- 产品管理 -->
+    <string name="customer_produce_hint">请输入产品名称</string>
+    <string name="category_first_radiobtn_text">第一类</string>
+    <string name="category_second_radiobtn_text">第二类</string>
+    <string name="category_third_radiobtn_text">第三类</string>
+    <string name="category_first_title_text">序号</string>
+    <string name="category_second_title_text">产品介绍</string>
+    <string name="category_third_title_text">操作</string>
+    <!--  -->
+
+    <string name="risk_manage_family">鉴于%1$s现处的人生阶段，有着%2$s的家庭责任，保险的功能主要体现在%3$s方面。据%4$s提供的基本信息显示，自己%5$s%6$s%7$s%8$s%9$s。建议%10$s%11$s%12$s添加%13$s类险种，%14$s
+     %15$s。%16$s%17$s为家庭的经济支柱，%18$s</string>
+    <string name="risk_manage_family_2"> 是%1$s主要的投保的对象，基于现有家庭结构及资产情况，保额需在%2$sRMB左右,确保覆盖风险给家庭带来的临时财务缺口，为家庭构筑坚固的防护墙。</string>
+    <string name="risk_manage_invest">年金对于购买者来说是非常安全可靠的。从本质上讲，年金保险并不是真正意义上的保险，而是人们通过保险公司进行的一项风险极低而受益中等的投资。对于%1$s情况，整个资产配置方案应以稳健为主。基于您的人生阶段，过多的风险可能会影响到您%2$s，而年金可以极大地降低你的投资风险，帮助您完成既定目标。</string>
+    <string name="risk_manage_tax">今天预备明天，这是真稳健；生时预备死时，这是真旷达；父母预备儿女，这是真慈爱；能做到这三步的人，才能算做是现代人。 胡适的这三句话一举总结了资产未雨绸缪对人生的意义所在。 而如何将资产进行保全、转移、分割、配置及合理避税呢，保险做百年最伟大的金融工具，可以实现上述所有功能，会严格按照您的意愿将资产交付于您心中所属。\n目前我国尚未开征遗产税，但已是目前热议的话题之一，并且在04年的时候颁布过遗产税征收的草案，遗产税在中国的开征势在必行，宜早做安排，而遗产税一旦开征，寿险将会成为最有效最便捷的规避遗产税的工具。</string>
+    <string name="fmember">例：子女1，子女2，母亲，父亲，岳父，岳母</string>
+    <string name="fage">1989.11,2012.7,1965.10,1963.2</string>
+    <string name="qita">其他</string>
+    <string name="yi1">18-35</string>
+    <string name="yi2">36-50</string>
+    <string name="yi3">51-65</string>
+    <string name="yi4">>65</string>
+    <string name="er1">没有</string>
+    <string name="er2">1-3年</string>
+    <string name="er3">4-6年</string>
+    <string name="er4">7-10年</string>
+    <string name="er5">>10年</string>
+    <string name="san1">≤10%</string>
+    <string name="san2">11-15%</string>
+    <string name="san3">16-25%</string>
+    <string name="san4">>25%</string>
+    <string name="si1">>60%</string>
+    <string name="si2">41-60%</string>
+    <string name="si3">21-40%</string>
+    <string name="si4">0-20%</string>
+    <string name="wu1">资本保障，同时赚取贴近银行存款利率的回报</string>
+    <string name="wu2">稳定、均衡的收益及资本增长</string>
+    <string name="wu3">逐步累计的长线资本增长</string>
+    <string name="wu4">尽快赚取最高的资本增长</string>
+    <string name="liu1">因为工作或私人原因，预期收入下降</string>
+    <string name="liu2">预期入息增幅与通胀同步</string>
+    <string name="liu3">预期入息增幅稍高于通胀</string>
+    <string name="liu4">可望升职加薪，预期收入能远超通胀</string>
+    <string name="qi1">忧虑市场波动影响收入，原因承担任何风险</string>
+    <string name="qi2">原因承担轻微程度市场风险，以换取资金增值的机会</string>
+    <string name="qi3">愿意承担中等程度市场风险，以加强资金增值及投资回报的机会</string>
+    <string name="qi4">愿意承担较高程度市场风险，相信短期波动无碍长线投资，以获取最大潜在回报</string>
+    <string name="ba1">即时卖出全部投资</string>
+    <string name="ba2">即时卖出部分投资</string>
+    <string name="ba3">没有任何即时行动，维持投资项目不变</string>
+    <string name="ba4">会即时套现获利，并可能会于逆市时再买入投资</string>
+    <string name="jiu1">将全部投资项目套现</string>
+    <string name="jiu2">将大部分投资项目套现</string>
+    <string name="jiu3">将小部分投资项目套现</string>
+    <string name="jiu4">不作任何行动</string>
+    <string name="shi1">少过1年</string>
+    <string name="shi2">1年至5年</string>
+    <string name="shi3">6年至10年</string>
+    <string name="shi4">多过10年</string>
+    <string name="f1">备用现金存款过剩，收入有较多结余，未能有效利用；</string>
+    <string name="f2">备用现金处于适中额度，建议在收支不变的情况下保持现状</string>
+    <string name="f3">备用现金存款不足，不足应对家庭的意外开支，可能会影响到未来的投资及预定理财目标</string>
+    <string name="f4">其它</string>
+    <string name="f5">家庭保障品过于简单，不能完全覆盖意外发生时家庭的财务缺口；</string>
+    <string name="f6">家庭保障品已经基本覆盖意外发生时家庭的财务缺口，建议在负债及家庭基本情况不变的情况下维持现状；</string>
+    <string name="f7">家庭保障类保障品过剩，建议对现有产品进行优化等操作，以便资金的有效增值；</string>
+    <string name="f8">其它</string>
+    <string name="ff1"><![CDATA[xxx投资品种类较多,但并未从相关性角度进行配置考虑, 容易产生系统性风险；]]></string>
+    <string name="ff2"><![CDATA[xxx由于工作繁忙，没有时间打理投资账户 ，现有投资品种较单一，投资品种类<font color="#CC66CC">现金流、房产、债券、股票、基金、期货、外汇、信托、一级市场项目、实体投资、另类投资</font>占比过大，并未能很好建立一个多元化的投资组合， 有一定系统性风险;]]></string>
+    <string name="ff3"><![CDATA[xxx是专业投资者，但现有投资品种较单一，投资品种类<font color="#CC66CC">现金流、房产、债券、股票、基金、期货、外汇、信托、一级市场项目、实体投资、另类投资</font>占比过大，并未能很好建立一个多元化的投资组合， 有一定系统性风险;]]></string>
+    <string name="ff4">其它</string>
+    <string name="fff1">自住及投资房产，在您的家庭资产中占比过大，整个家庭资产配置太过于单一，有一定的系统性风险；</string>
+    <string name="fff2">房产资产有闲置情况，未能有效打理利用；</string>
+    <string name="fff3">其它</string>
+    <string name="fff4"><![CDATA[存款结余有限, 规划重点在<font color="#CC66CC"> 每月现金流入、调整现有投资配置;</font>]]></string>
+    <string name="fff5"><![CDATA[收入有较多结余，此部分应做重点规划 <font color="#CC66CC">及调整现有投资配置;</font>]]></string>
+    <string name="fff6">其它</string>
+    <string name="muqian_age">目前年龄（岁）：</string>
+    <string name="muqian_age1">目前年龄（岁）</string>
+    <string name="tuixiu_age">预计退休年龄（岁）</string>
+    <string name="tuixiu_age1">预计退休年龄（岁）</string>
+    <string name="yuji_age">预计寿命（岁）</string>
+    <string name="meiyue_zhichu">当前每月支出（元）</string>
+    <string name="meiyue_zhichu1">当前每月支出（元）</string>
+    <string name="yuji_tzl">预计通货膨胀率（%）</string>
+    <string name="yuji_tzl1">预计通货膨胀率（%）</string>
+    <string name="tuixiu_zhichu">退休时预计 每月支出（元）</string>
+    <string name="tuixiu_zhichu1">退休时预计 每月支出（元）</string>
+    <string name="tuixiu_yisheng">预计一生所需退休金（元）</string>
+    <string name="tuixiu_yisheng1">预计一生所需退休金（元）</string>
+    <string name="yuji_syl">预计收益率（%）</string>
+    <string name="tuixiu_dingtou">预计退休前每月定投（元）</string>
+    <string name="yuji_ylj">预计提取养老金年期（年）</string>
+    <string name="jisuan">计算</string>
+    <string name="yuan">（单位：元）</string>
+    <string name="bt_back">上一页</string>
+    <string name="bt_save">保存</string>
+    <string name="shouru_gongzi">工资收入</string>
+    <string name="zhichu_richang">日常开销</string>
+    <string name="hongli">奖金及红利收入</string>
+    <string name="zhichu_fumu">父母赡养金</string>
+    <string name="shouru_guding">固定投资收入</string>
+    <string name="zhichu_daikuan">贷款支出</string>
+    <string name="shouru_qita">其它固定收入</string>
+    <string name="zhichu_qita">其它固定支出</string>
+    <string name="shouru_qitabu">其它不固定收入</string>
+    <string name="zhichu_qitabu">其它不固定支出</string>
+    <string name="zhichu_baoxian">新增保险支出</string>
+    <string name="zhichu_dingtou">新增定投支出</string>
+    <string name="shouru_heji">合计</string>
+    <string name="zhichu_heji">合计</string>
+    <string name="zinv_age">子女年龄（岁）：</string>
+    <string name="daxue_age">预计就读大学年龄（岁）：</string>
+    <string name="nianqi_jiudu">就读年期（年）：</string>
+    <string name="yuji_xzzl">预计学费增长率（%）：</string>
+    <string name="xuefei_zhichu">当前每年学费支出（元）：</string>
+    <string name="xuefei_daxue">预计大学所需学费（元）：</string>
+    <string name="dxq_dingtou">预计就读大学前每月定投（元）：</string>
+    <string name="daxuefei_zhichu">大学时预计每年学费支出（元）：</string>
+    <string name="gaoliu">高中留学</string>
+    <string name="waida">国外大学</string>
+    <string name="zj_htz">总计（含通胀）</string>
+    <string name="ss"><![CDATA[注数：&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注]]></string>
+    <string name="bf1"><![CDATA[根据现有保险的被保人、保险公司、保险计划名称、保额、保费、年期等进行综述；根据年龄、负债、家庭情况<font color="#CC66CC">（婚姻状况、有无需要抚养及赡养的儿女、妻子、父母等）</font>现有保险是否为社保、商业保险是否为雇主所缴纳、离职后是否可以带走等情况进行分析。]]></string>
+    <string name="bf2">保费、年期等进行综述；根据年龄、负债、家庭情况（婚</string>
+    <string name="bf3">姻状况、有无需要抚养及赡养的儿女、妻子、父母等）现</string>
+    <string name="bf4">有保险是否为社保、商业保险是否为雇主所缴纳、离职后</string>
+    <string name="bf5">是否可以带走等情况进行分析。</string>
+    <string name="et_7">（点击文本编辑）</string>
+    <string name="rb_meiguo">我国</string>
+    <string name="rb_oumeng">欧盟</string>
+    <string name="rb_woguo">我国</string>
+    <string name="rb_qita">其他</string>
+    <string name="et_guojia">请输入国家名称</string>
+    <string name="tv_thpzl">通货膨胀率</string>
+    <string name="tv_xfzzl">学费增长率</string>
+    <string name="tv_jiaoyujin1">有统计数据显示，目前我国的通货膨胀率大约以4%的速度增长，而孩子们的学费则是</string>
+    <string name="tv_jiaoyujin2">以8%的速度在增长，远高于通货膨胀的增速。根据中国社会调查所的一项调查表明，</string>
+    <string name="tv_jiaoyujin3">超过半数的被调查家庭平均每年的教育消费占据了全家总收入的30%。在专业的理财</string>
+    <string name="tv_jiaoyujin4">角度看，对子女的成长教育金的打理方式有别于其他投资。首先，规划成长教育金绝</string>
+    <string name="tv_jiaoyujin5">对不能延迟，因为孩子的教育是到了一定年龄是必须要上学的，家长们越早开始规划，</string>
+    <string name="tv_jiaoyujin6">越容易实现最终的目标。其次，孩子的教育金，尤其是学费在一定阶段是相对固定的，</string>
+    <string name="tv_jiaoyujin7">因此，家长们必须要有一个总体的规划目标，不宜太多，也不能太少。第三，打理教</string>
+    <string name="tv_jiaoyujin8">育金的期限通常较长，家长们必须要有足够的心理准备，打一场持久战。第四， 此项</string>
+    <string name="tv_jiaoyujin9">资金需作稳健投资，安全达成预定目标。</string>
+    <string name="meiqitourue">每期投入额</string>
+    <string name="shouyi">收益(%)</string>
+    <string name="qishu">期数</string>
+    <string name="bt_jian">-</string>
+    <string name="tv_cong">从</string>
+    <string name="tv_qidao">期到</string>
+    <string name="tv_qi">期</string>
+    <string name="bt_jia">+</string>
+    <string name="leixing1">现金</string>
+    <string name="bili1">20%</string>
+    <string name="nianhua1">无</string>
+    <string name="shuhui1">随时</string>
+    <string name="leixing2">信用形式</string>
+    <string name="bili2">40%</string>
+    <string name="nianhua2">无</string>
+    <string name="shuhui2">随时</string>
+    <string name="leixing3">伙伴市场基金</string>
+    <string name="bili3">20%</string>
+    <string name="gys3">华夏基金</string>
+    <string name="mc3">华夏现金增利</string>
+    <string name="nianhua3">约4%</string>
+    <string name="shuhui3">T+2</string>
+    <string name="leixing4">国债逆回购</string>
+    <string name="bili4">20%</string>
+    <string name="nianhua4">约5%</string>
+    <string name="shuhui4">T+0</string>
+    <string name="mc4">GC001,GC007,R-OO1等</string>
+    <string name="tv_1ci">第一次</string>
+    <string name="tv_riqi1">2012/12/20</string>
+    <string name="tv_2ci">第二次</string>
+    <string name="tv_riqi2">2013/01/03</string>
+    <string name="tv_3ci">第三次</string>
+    <string name="tv_riqi3">2013/03/01</string>
+    <string name="jia">+</string>
+    <string name="bt_accept">同意</string>
+    <string name="rb_benren">本人</string>
+    <string name="rb_peiou">配偶</string>
+    <string name="rb_zinv">子女</string>
+    <string name="rb_fumu">父母</string>
+    <string name="rb_caichan">财产</string>
+    <string name="cb_shouxian">寿险</string>
+    <string name="cb_fenhong">分红</string>
+    <string name="cb_yiwai">意外</string>
+    <string name="cb_jixian">疾险</string>
+    <string name="cb_yiliaoxian">医疗险</string>
+    <string name="cb_wannengxian">万能险</string>
+    <string name="cb_nianjin">年金</string>
+    <string name="cb_qita">其他</string>
+    <string name="rb_wunian">5年</string>
+    <string name="rb_shinian">10年</string>
+    <string name="rb_ershinian">20年</string>
+    <string name="bt_queren">确认添加</string>
+    <string name="tv_pianhao">高女士的风险偏好为：</string>
+    <string name="et_pianhao">低风险</string>
+    <string name="tv_tuijian">因此，推荐使用</string>
+    <string name="tv_juti">具体内容如下：</string>
+    <string name="rb_ylj">养老金储备</string>
+    <string name="rb_jyj">教育金储备</string>
+    <string name="rb_unfix">不动产购置计划</string>
+    <string name="rb_bzp">保障品完善及合理调配</string>
+    <string name="rb_yzc">用资产储备及收入的结余部分进行投资增值</string>
+    <string name="rb_ymq">移民前税务安排</string>
+    <string name="rb_anquan">资产安全隔离</string>
+    <string name="rb_ycc">遗产筹划</string>
+    <string name="rb_qt">其它</string>
+    <string name="adive_invest_configure"><![CDATA[以xxx的家庭情况， 需要长期规划的是<font color="#CC66CC">养老金、教育金、换屋基金、其它</font>， 这部分资金由于目的的确定及必要性，建议用低风险投资策略进行操作。]]></string>
+    <string name="insure_family_tv1">
+<![CDATA[鉴于XXX现处的人生阶段，有着<font color="#CC66CC">供房贷、供车贷、赡养老人、抚养小孩、为自己养老、等其它</font>
+        的家庭责任，保险的功能主要体现在<font color="#CC66CC">保障、投资、稳健性资产配置、财产分割、避税、遗产传承、等其它</font>方面。据XXX提供的基本信息显示，自己<font color="#CC66CC">（除基本社保外）（并无其他商业保险、已经持有）（意外险、定期
+        寿险、分红型寿险、投联险、年金、重大疾病以及住院医疗险、家财险、等其它）（但具体条款不明）</font>。建议XXX<font color="#CC66CC">（及）（配偶、子女、父母）（一起）</font>添加<font color="#CC66CC">（意外险、定期寿险、分红型寿险、投联险、年金、重大疾病以及住院医疗险）</font>类险种，<font color="#CC66CC">（同时调整目
+        前所持有的）（意外险、定期寿险、分红型寿险、投联险、年金、重大疾病以及住院医疗险）</font>。XXX<font color="#CC66CC">（您自己、配偶、子女）</font>为家庭的经济支柱，是寿险主要的投保的对象，基于现有家庭结构及资产情况，保额需在xxRMB左右,确保覆盖风险给家庭带来的临时财务缺口，为家庭构筑坚固的防护墙。]]>
+    </string>
+    <string name="insure_famliy_tv2"><![CDATA[完善家庭保障结构，未雨绸缪，防患于未然是XXX家庭风险管理的重中之重。]]></string>
+    <string name="invest_config_str">
+<![CDATA[年金对于购买者来说是非常安全可靠的。从本质上讲，年金保险并不是真正意义上的保险，而是人们通
+\n        过保险公司进行的一项风险极低而受益中等的投资。对于<font color="#CC66CC">投资风格保守、用途确定为某必要目标且可进行中期投资的资金、年龄较大的投资者等</font>情况，整个资产配置方案应以稳健为主。基于您的人生阶段，过多的风险可能会影响到您
+\n        <font color="#CC66CC">退休后的生活质量、完成目标的确定性、投资配置的稳健性</font>，
+\n        而年金可以极大地降低你的投资风险，帮助您完成既定目标。]]>
+    </string>
+    <string name="pension_preview" formatted="false"><![CDATA[有数据统计显示,目前我国的通货膨胀率大约以xx%的速度增长，而孩子们的学费则以**%的速度增长，远高于通货膨胀的增长速度，根据中国社会调查所的一项调查表明，超过半数被调查的家庭平均每年的教育消费占了全家收入的30%，在专业的理财角度看，对子女的教育金打理方式有别于其它投资，首先，规划教育金绝对不能延迟，因为孩子的教育是到了一定年龄必须上学的。家长们越早开始规划，越容易实现最终目标，其次，孩子的教育金，尤其是学费在一定阶段是先对固定的，因此，家长们要有一个总体的规划，不宜太多也不宜太少，第三，打理教育金一般时间较长，家长们必要要有足够的耐心，打一场持久战，第四，此项资金需要稳健投资，安全达成预定目标。]]></string>
+
+    <!-- 确认理财规划书的FragmentTitle -->
+    <string name="confirm_plan_baseinfo">个人基本资料</string>
+    <string name="confirm_plan_baseinfo_name">姓名：</string>
+    <string name="confirm_plan_baseinfo_gender">性别 ：</string>
+    <string name="confirm_plan_baseinfo_birth">出生日期 ：</string>
+    <string name="confirm_plan_baseinfo_profession">职业： </string>
+    <string name="confirm_plan_baseinfo_marital_status">婚姻状态： </string>
+    <string name="confirm_plan_baseinfo_spouse_age">配偶年龄： </string>
+    <string name="confirm_plan_baseinfo_family_members">家庭成员： </string>
+    <string name="confirm_plan_baseinfo_childs_age">子女年龄： </string>
+    <string name="confirm_plan_baseinfo_contact">联系方式： </string>
+    <string name="confirm_plan_baseinfo_remark">备注： </string>
+    <string name="confirm_plan_assets_liabilities">家庭资产状况</string>
+    <string name="confirm_plan_assentstitle_assents">资产</string>
+    <string name="confirm_plan_assentstitle_expectedrevenue">预期收益</string>
+    <string name="confirm_plan_assentstitle_liabilities">负债</string>
+    <string name="confirm_plan_assentstitle_yearperiod">年期</string>
+    <string name="confirm_plan_assentsinfo_cash">现金 </string>
+    <string name="confirm_plan_assentsinfo_demanddeposits">活期存款 </string>
+    <string name="confirm_plan_assentsinfo_deposits">定期存款</string>
+    <string name="confirm_plan_assentsinfo_stock">股票 </string>
+    <string name="confirm_plan_assentsinfo_fund">基金</string>
+    <string name="confirm_plan_assentsinfo_bonds">债券</string>
+    <string name="confirm_plan_assentsinfo_estate">房产</string>
+    <string name="confirm_plan_assentsinfo_other">其他 </string>
+    <string name="confirm_plan_assentsinfo_total">资产总计 </string>
+    <string name="confirm_plan_liabilities_housing_fund_loans">房屋公积金贷款</string>
+    <string name="confirm_plan_liabilities_housing_commercial_loans">房屋商用贷款 </string>
+    <string name="confirm_plan_liabilities_car_loans">汽车贷款</string>
+    <string name="confirm_plan_liabilities_consumer_loans">消费贷款</string>
+    <string name="confirm_plan_liabilities_improvement_loans">装修贷款</string>
+    <string name="confirm_plan_liabilities_private_loans">民间贷款</string>
+    <string name="confirm_plan_liabilities_no_credit_card_payment">信用卡未付款</string>
+    <string name="confirm_plan_liabilities_other">其他</string>
+    <string name="confirm_plan_liabilities_total">负债总计 </string>
+    <string name="confirm_plan_net_worth">净值（资产-负债） </string>
+    <string name="confirm_plan_balance_payments">家庭收支状况</string>
+    <string name="confirm_plan_balance_payments_income">*本人收入</string>
+    <string name="confirm_plan_balance_payments_family_expenses">*家庭生活开销</string>
+    <string name="confirm_plan_balance_payments_spouse_income">配偶收入</string>
+    <string name="confirm_plan_balance_payments_housing_expenses">房屋支出</string>
+    <string name="confirm_plan_balance_payments_year_end_bonuses">年终奖金</string>
+    <string name="confirm_plan_balance_payments_medical_expenses">医疗费</string>
+    <string name="confirm_plan_balance_payments_rental_income">房租收入</string>
+    <string name="confirm_plan_balance_payments_children_education">子女教育费</string>
+    <string name="confirm_plan_balance_payments_deposits_interest">存款债券利息</string>
+    <string name="confirm_plan_balance_payments_insurance">保险费</string>
+    <string name="confirm_plan_balance_payments_dividends">股利、股息</string>
+    <string name="confirm_plan_balance_payments_travel_expenses">旅游费</string>
+    <string name="confirm_plan_balance_payments_various_dividend">各类分红</string>
+    <string name="confirm_plan_balance_payments_alimony">赡养费</string>
+    <string name="confirm_plan_balance_payments_other_fixed_income">其它固定收入</string>
+    <string name="confirm_plan_balance_payments_other_fixed_expenses">其它固定支出</string>
+    <string name="confirm_plan_balance_payments_other_nonfixed_income">其它不固定收入</string>
+    <string name="confirm_plan_balance_payments_other_nonfixed_expenses">其它不固定支出</string>
+    <string name="confirm_plan_balance_payments_total_revenue">收入合计</string>
+    <string name="confirm_plan_balance_payments_total_expenditure">支出合计</string>
+    <string name="confirm_plan_balance_payments_annual_balance">*每年结余（收入-支出）</string>
+    <string name="confirm_plan_family_financial_analysis">家庭及财务分析</string>
+    <string name="confirm_plan_spare_cash_deposits">备用现金存款</string>
+    <string name="confirm_plan_protection_product">保障品现状</string>
+    <string name="confirm_plan_investment_goods">投资品现状</string>
+    <string name="confirm_plan_configuration_real_property">不动产配置现状</string>
+    <string name="confirm_plan_balance">结余情况</string>
+    <string name="confirm_plan_financial_goals">理财目标</string>
+    <string name="investment_planning_pensions_demo">养老金演示</string>
+    <string name="investment_planning_current_age">目前年龄（岁）</string>
+    <string name="investment_planning_expected_retirement_age">预计退休年龄（岁）</string>
+    <string name="investment_planning_expected_life">预计寿命（岁）</string>
+    <string name="investment_planning_expected_inflation">预计通货膨胀（%）</string>
+    <string name="investment_planning_expenditure">当前每月支出（元）</string>
+    <string name="investment_planning_retirement_expenditure">退休时每月支出(元)</string>
+    <string name="investment_planning_expected_lifetime_required">预计一生所需退休金（元）</string>
+    <string name="investment_planning_expected_yield">预计收益率（%）</string>
+    <string name="investment_planning_fixed_investment">预计退休每月定投（元）</string>
+    <string name="investment_planning_education_demo">教育金演示</string>
+    <string name="investment_planning_education_children_age">子女年龄（岁）</string>
+    <string name="investment_planning_education_expected_college_age">预计就读大学年龄（岁）</string>
+    <string name="investment_planning_education_student_life">就读年期（年）</string>
+    <string name="investment_planning_education_estimated_annual_fees">预计每年学费支出（元）</string>
+    <string name="investment_planning_education_estimated_annual_fees_university">大学时预计每年学费支出(元)</string>
+    <string name="investment_planning_education_estimated_university">预计大学所需学费（元）)</string>
+    <string name="investment_planning_education_expected_yield">预计收益率（%）</string>
+    <string name="investment_planning_education_expected_tuition_rate">预计学费增长率</string>
+    <string name="investment_planning_education_construction_university_per_month">预计就读大学前每月建设（元）</string>
+    <!--  -->
+    <!-- 风险偏好 -->
+    <string name="risk_result_tips">非常感谢您的配合，我们会在3-5个工作日内完成分析。届时会按约定时间再次拜访您！</string>
+    <string name="risk_high">高风险</string>
+    <string name="risk_low">低风险</string>
+    <string name="risk_middle">中风险</string>
+    <string name="risk_high_type">股票型投资</string>
+    <string name="risk_low_type">债券及非股票类投资</string>
+    <string name="risk_middle_type">基金类投资</string>
+    <!-- creat book -->
+    <string name="cb_foreword_title">尊敬的</string>
+    <string name="cb_foreword_content11">\u3000\u3000景淳理财是一家拥有顶级金融理财专家与顾问团队，专业从事第三方理财规划、环球资产配置咨询的服务性机构。我们非常荣幸能为您设计理财方案，对于您给予的信任和支持，我们表示感谢，并衷心希望我们能早日实现您的财务目标。</string>
+    <string name="cb_foreword_content12">\u3000\u3000理财，不仅仅是简单的数字累加，而是一种积极的人生态度，从而帮助我们更好地享受美好的生活。即使是富裕家庭，合理的家庭财务规划及资产配置也是不可缺少的。</string>
+    <string name="cb_foreword_content13">\u3000\u3000我们的职责是准确评估您的财务需求，为您提供高质量的财务建议和长期的理财服务，在兼顾资金安全性、流动性、收益性的基础上帮助您明确财务需求及目标，帮助您对理财事务更好地进行决策。所有的理财规划分析都基于您目前的家庭情况、财务状况、生活环境、未来目标和计划，并且建立在一定的假设基础上，必须根据时间和环境的不断变化加以调整。特别是在人生发生较大变化的阶段，如更换工作、创建企业、退休、移民等等。因此，我们建议您定期评估您的目标和计划。</string>
+    <string name="cb_foreword_content14">\u3000\u3000本理财建议书为参考性质，它为您提供一般性的理财指引，不代表我们对实现理财目标的保证。如果您有任何疑问，欢迎您随时致电和我们联系，我们期待着与您共同完善和执行本方案。</string>
+    <string name="cb_foreword_content2_title1">专业服务说明：贵宾理财部高级经理</string>
+    <string name="cb_foreword_content2_title2">为您制作此份理财建议书，其经验背景介绍如下：</string>
+    <string name="cb_foreword_content2_zhiwei">贵宾理财部经理 </string>
+    <string name="cb_foreword_content2_xueli">学历背景： </string>
+    <string name="cb_foreword_content2_xueliA">本科 </string>
+    <string name="cb_foreword_content2_zhuanye">专业认证： </string>
+    <string name="cb_foreword_content2_zhuanyeA">CFA（特许金融分析师）、CHFP（国家理财规划师） </string>
+    <string name="cb_foreword_content2_gongzuo">工作经验： </string>
+    <string name="cb_foreword_content2_gongzuoA">财务策划、证券期货投资领域5年 </string>
+    <string name="cb_foreword_content2_techang">专业特长：</string>
+    <string name="cb_foreword_content2_techangA">（投资规划、保障规划、证券、期货市场投资、理财规划、房地产、信托）</string>
+    <string name="cb_foreword_content2_time">十二月 二零一三年</string>
+    <string name="ceshi_name">李先生</string>
+
+    <!-- cash flow -->
+    <string name="t_cash_flow_summary">综述</string>
+    <string name="t_cash_flow_summary_content1">\u3000\u3000现金流量管理中的现金，不是我们通常所理解的现钞，而是指的库存现金和银行存款，还包括现金等价物，即所持有的期限短、流动性强、容易转换为已知金额现金、价值变动风险很小的投资等。包括现金、可以随时用于支付的银行存款和其他货币资金。</string>
+    <string name="t_cash_flow_summary_content2">\u3000\u3000当资金被确认为现金等价物必须同时具备四个条件：期限短、流动性强、易于转换为已知金额现金、价值改动风险小。</string>
+    <string name="t_cash_flow_summary_content3">\u3000\u3000一般规划意义上家庭的现金流入包括： 经常性流入：工资、奖金及其它一些经常性收入； 投资性现金流入：利息、股息收入及出售资产收入。</string>
+    <string name="t_cash_flow_summary_content4">\u3000\u3000家庭的现金流出包括： 日常开支：衣、食、住、行的费用及其它一些经常性支出 ；意外支出：人情往来、临时性失业、突发疾病、意外伤害及一些临时决定用款。</string>
+    <string name="t_cash_flow_suggest">现金流情况及建议</string>
+    <string name="t_cash_flow_suggest_conntent">客人现在的现金流情况及建议</string>
+    <string name="t_cash_flow_setting">现金流配置</string>
+    <string name="t_cash_flow_setting_type">配置类型</string>
+    <string name="t_cash_flow_setting_proportion">比例</string>
+    <string name="t_cash_flow_setting_income">年化收益</string>
+    <string name="t_cash_flow_setting_ransomtime">赎回时间</string>
+
+    <!-- investment planning -->
+    <string name="t_investment_planning_summary_content">\u3000\u3000以%1$s的家庭情况， 需要长期规划的是（养老金、教育金、换屋基金、其它）， 这部分资金由于目的的确定及必要性，建议用%2$s投资策略进行操作。\n\u3000\u3000%3$s</string>
+    <string name="t_investment_planning_show">定期定投数据演示</string>
+    <string name="t_investment_planning_show1">每年%1$s元，演示设定为%2$s年，以年收益率%3$s演算，数据如下：</string>
+    <string name="t_investment_planning_show_year">年</string>
+    <string name="t_investment_planning_show_month">月</string>
+    <string name="t_investment_planning_show_addup">累计投资额</string>
+    <string name="t_investment_planning_show_rmb">期末余额 RMB</string>
+    <string name="t_investment_planning_show5">根据您的风险评估结果（%1$s），推荐您使用 %2$s</string>
+    <string name="t_investment_planning_show5_title">投资组合推荐</string>
+
+    <!-- balance of payments -->
+    <string name="t_balance_of_payments_left">推荐理财产品</string>
+    <string name="t_balance_of_payments_not_added">未添加</string>
+    <string name="t_balance_of_payments_left2">*每年结余（收入-支出）</string>
+    <string name="t_balance_of_payments_right_title1">年收入</string>
+    <string name="t_balance_of_payments_right_title2">年支出</string>
+    <string name="t_balance_of_payments_right_hang1_1">类型</string>
+    <string name="t_balance_of_payments_right_hang1_2">原有</string>
+    <string name="t_balance_of_payments_right_hang1_3">变动额</string>
+    <string name="t_balance_of_payments_right_name1">*本人收入</string>
+    <string name="t_balance_of_payments_right_name2">*家庭生活开销</string>
+    <string name="t_balance_of_payments_right_name3">配偶收入</string>
+    <string name="t_balance_of_payments_right_name4">房屋支出</string>
+    <string name="t_balance_of_payments_right_name5">年终奖金</string>
+    <string name="t_balance_of_payments_right_name6">医疗费</string>
+    <string name="t_balance_of_payments_right_name7">房租收入</string>
+    <string name="t_balance_of_payments_right_name8">子女教育费</string>
+    <string name="t_balance_of_payments_right_name9">存款债券利息</string>
+    <string name="t_balance_of_payments_right_name10">保险费</string>
+    <string name="t_balance_of_payments_right_name11">股利、股息</string>
+    <string name="t_balance_of_payments_right_name12">旅游费</string>
+    <string name="t_balance_of_payments_right_name13">各类分红</string>
+    <string name="t_balance_of_payments_right_name14">赡养费</string>
+    <string name="t_balance_of_payments_right_name15">其它固定收入</string>
+    <string name="t_balance_of_payments_right_name16">其它固定支出</string>
+    <string name="t_balance_of_payments_right_name17">其它不固定收入</string>
+    <string name="t_balance_of_payments_right_name18">其它不固定支出</string>
+    <string name="t_balance_of_payments_right_name19">收入合计</string>
+    <string name="t_balance_of_payments_right_name20">支出合计</string>
+    <string name="t_balance_of_payments2_right">调整后资产配置</string>
+    <string name="t_balance_of_payments2_right_title1">调整前</string>
+    <string name="t_balance_of_payments2_right_title2">调整后</string>
+    <string name="t_balance_of_payments2_right_title3">建议配置</string>
+    <string name="t_balance_of_payments2_right_title4">资金（RMB)</string>
+    <string name="t_balance_of_payments2_right_title5">规划目标点上的状况</string>
+    <string name="t_balance_of_payments2_right_title6">备注</string>
+    <string name="t_balance_of_payments2_right_left1">现金</string>
+    <string name="t_balance_of_payments2_right_left2">年结余</string>
+    <string name="t_balance_of_payments2_right_left3">保障品</string>
+    <string name="t_balance_of_payments2_right_left4">股票基金</string>
+    <string name="t_balance_of_payments2_right_left5">其他</string>
+    <string name="t_balance_of_payments2_right_content1">日常现金储备</string>
+    <string name="t_balance_of_payments2_right_content2">部分现金、信用形式、货币型基金及国债逆回购</string>
+    <string name="t_balance_of_payments2_right_content3">现金流准备</string>
+    <string name="t_balance_of_payments2_right_content4">作为日常开支、突发事件的应急、临时外出旅游费用、短暂失业或其它计划外开支的准备</string>
+    <string name="t_balance_of_payments2_right_content5">其他现金储备</string>
+    <string name="t_balance_of_payments2_right_content6">货币型基金及国债逆回购</string>
+    <string name="t_balance_of_payments2_right_content7">现金流准备</string>
+    <string name="t_balance_of_payments2_right_content8">此笔款项由于用途确定， 且短期会动用，以灵活的现金管理管理工具形式持有</string>
+    <string name="t_balance_of_payments2_right_content9">完善家庭保障结构，保额约180万</string>
+    <string name="t_balance_of_payments2_right_content10">退休后，每年的提领可作为补充养老金</string>
+    <string name="t_balance_of_payments2_right_content11">约30万，涵盖65种重大疾病</string>
+    <string name="t_balance_of_payments2_right_content12">完善家庭保障结构，规避一定的系统性风险</string>
+    <string name="t_balance_of_payments2_right_content13">全球保障，全球理赔，每天住院补助530元，最多270天</string>
+    <string name="t_balance_of_payments2_right_content15">社保只能满足基本要求，对于特殊需求依然不能满足</string>
+    <string name="t_balance_of_payments2_right_content16">全球基金组合</string>
+    <string name="t_balance_of_payments2_right_content17">海外基金平台定期定投</string>
+    <string name="t_balance_of_payments2_right_content18">以预期9%年收益计算，到计划退休年龄累计收益约(10,703,123）万，基本覆盖养老金缺口及子女教育金</string>
+    <string name="t_balance_of_payments2_right_content19">此计划供款提款均很灵活，可以根据个人家庭及资产情况的变化进行适当调整</string>
+    <string name="t_balance_of_payments2_right_content20">国内基金组合</string>
+    <string name="t_balance_of_payments2_right_content21">指数型ETF基金定期定投</string>
+    <string name="t_balance_of_payments2_right_content22">以预期6%年收益计算，到计划退休年龄累计收益约（10,703,123）万</string>
+    <string name="t_balance_of_payments2_right_content23">此笔款项可用作不动产购置首付或换车用款</string>
+    <string name="t_balance_of_payments2_right_content24">理财产品</string>
+    <string name="t_balance_of_payments2_right_content25">部分货币型基金、国债逆回购或累计到一定金额购理财产品。</string>
+    <string name="t_balance_of_payments2_right_content26">资产稳步增长,有效保值增值</string>
+    <string name="t_balance_of_payments2_right_content27">剩余年结余，累计到一定金额可配置理财产品或我司有限合伙等产品</string>
+    <string name="t_balance_of_payments2_right_content28">股票、基金</string>
+    <string name="t_balance_of_payments2_right_content29">建议参考我司《慧富天下》</string>
+    <string name="t_balance_of_payments2_right_content30">适当的金融资产配置</string>
+    <string name="t_balance_of_payments2_right_content31">资产增值</string>
+
+    <!-- CustomeService  客户服务 -->
+    <string name="t_custome_service_title1">新客户跟进制度</string>
+    <string name="t_custome_service_title2">老客户跟进制度</string>
+    <string name="t_custome_service_content1_1">团队经理通过对外演讲取得潜在客户名单，按照分配标准将名单分配至各销售顾问，由各销售顾问负责跟进，跟进的记录，包括跟进时间、结果都须真实详细地填写至《客户跟进表》</string>
+    <string name="t_custome_service_content1_old">潜在客户名单分配标准</string>
+    <string name="t_custome_service_content1_old_1">\u3000\u30001. 客户名单会在演讲结束后半天内制作成WORD文件，交由团队经理分配；</string>
+    <string name="t_custome_service_content1_old_2">\u3000\u30002.参加当日演讲活动的销售顾问可优先取得客户名单；</string>
+    <string name="t_custome_service_content1_old_3">\u3000\u30003.业绩考核成绩高者可优先取得客户名单，但于当日参加演讲活动的人员之后。</string>
+    <string name="t_custome_service_content1_new">新客户跟进要求</string>
+    <string name="t_custome_service_content1_new_1">\u3000\u30001.在收到分配名单后2天内（含收名单当日）完成初次致电；如未能及时致电，往后三次演讲得到的潜在客户名单不予分配；初次致电的前三段问答需记录在跟进记录表中；</string>
+    <string name="t_custome_service_content1_new_2">\u3000\u30002.初次致电后7天内约见客户；</string>
+    <string name="t_custome_service_content1_new_3">\u3000\u30003.初次致电后7天内未能约见客户的，之后每周致电客户跟进一次；</string>
+    <string name="t_custome_service_content1_new_4">\u3000\u30004.初次致电客户一个月后仍未能成功约见的，之后每两周致电客户跟进一次；</string>
+    <string name="t_custome_service_content1_new_5">\u3000\u30005.初次致电客户二个月后仍未能成功约见的，之后每月致电客户跟进一次；</string>
+    <string name="t_custome_service_content1_new_6">\u3000\u30006.如所分配的潜在客户，其中50%都无法在初次致电客户后二个月内约见的，须由销售顾问对其话术进行指导、调整；</string>
+    <string name="t_custome_service_content1_new_7">\u3000\u30007.对于客户的电话、邮件等，须24小时内给予回复，告知其具体处理的时间，并于三个工作日内解决。</string>
+    <string name="t_custome_service_content2_1">1.对于已经购买产品的老客户，负责该客户的销售顾问应定期对客户进行回访并将回访记录填 至《客户回访表》：</string>
+    <string name="t_custome_service_content2_2">\u3000第一年每季度回访一次，一年共回访4次；</string>
+    <string name="t_custome_service_content2_3">\u3000第二年每半年回访一次，一年共回访2次；</string>
+    <string name="t_custome_service_content2_4">\u3000第三年起每年回访1次。</string>
+    <string name="t_custome_service_content2_5">2.对于无法完成年度回访次数考核的顾问，公司将有权收回该客户，另行安排其他顾问进行跟踪服务；</string>
+    <string name="t_custome_service_content2_6">3.对于客户的电话、邮件等，须24小时内给予回复，告知其具体处理的时间，并于三个工作日内解决。</string>
+
+    <!-- 确认理财规划书页面的标题 -->
+    <string name="risk_manage_button">家庭风险管理</string>
+    <string name="risk_manage_hold">现持保险情况</string>
+    <string name="risk_manage_memo">现有保险说明</string>
+    <string name="risk_manage_suggest">建议保险配置</string>
+    <string name="balance_of_income">调整后年收支状况</string>
+    <string name="balance_of_asset">调整后资产配置</string>
+
+</resources>

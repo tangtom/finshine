@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:background="@drawable/shape_find_target_customer_bg" >
+
+        <LinearLayout
+            android:id="@+id/lt_1"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_top_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvProdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="银子企联8"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvSelectedCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="已选择3个客户"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_2"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lt_1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <CheckBox
+                android:id="@+id/cbCustomerCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选/取消全选"
+                android:focusable="false"
+                android:textColor="#808080" />
+
+            <Button
+                android:id="@+id/btn_add_customer"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_find_customer"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="新增"
+                android:textColor="#DCD2B9"
+                android:textSize="16sp" />
+
+            <Button
+                  android:id="@+id/btn_del_customer"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_find_customer"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="删除"
+                android:textColor="#DCD2B9"
+                android:textSize="16sp" />
+
+            <Button
+                  android:id="@+id/btn_send_emali"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_find_customer"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="群发邮件"
+                android:textColor="#DCD2B9"
+                android:textSize="16sp" />
+
+            <Button
+                  android:id="@+id/btn_send_sms"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_find_customer"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="群发短讯"
+                android:textColor="#DCD2B9"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView_findTargetCustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lt_2"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:minHeight="200dp" 
+            android:scrollbars="none"
+            android:divider="#d4d4d4"
+            android:dividerHeight="1dp"
+            />
+        <View 
+            android:id="@+id/view"
+            android:layout_below="@+id/listView_findTargetCustomer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_market_back"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            style="@style/Txt18Whiteffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            
+            android:text="未开通使用权限"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对不起！您无【客户管理】模块的" />
+            
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="使用权限，开通请与管理员联系" />
+            
+           <!--  <TextView
+                style="@style/Txt16Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用权限，开通请与管理员联系" /> -->
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape" />
+            
+            <TextView
+                style="@style/Txt20Brownd7c093"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 400-000-1234 " />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ensure"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            style="@style/CommonButtonRadiusBrownd"
+            android:gravity="center"
+            android:text="确定"
+        />
+    </LinearLayout>
+
+</LinearLayout>

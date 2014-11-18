@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="21dp" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托人风险评估表"
+            android:textColor="#D7C093"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:text="下表是根据您对上述问题回答的总分，藉此评估，您在面对风险时所持有的“一般”承受度" />
+       
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="分数风险属性典型分类" />
+        
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1. 10分-15分     稳健型" />
+        
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2. 9分以下          保守型" />
+        
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="2. 16分-27分       积极型" />
+        
+      <LinearLayout
+          android:layout_width="994dp"
+          android:layout_height="wrap_content" 
+          android:layout_marginRight="20dp"
+          >
+
+          <TextView
+              style="@style/Txt18Gray808080"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="根据回答问卷各项统计所得，本人的总分是" />
+
+          
+          <TextView
+              android:id="@+id/txtRiskNum1"
+              android:layout_width="25dp"
+              android:layout_height="wrap_content"
+              android:text="20"
+              style="@style/Txt20Orangeff8b23"
+              android:textStyle="bold" >
+          </TextView>
+
+          <TextView
+              style="@style/Txt18Gray808080"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="参照以上定义，本人面对一般投资风险的“一般”承受度大致是" />
+
+          <TextView
+              android:id="@+id/txtRiskType"
+              android:layout_width="70dp"
+              android:layout_height="wrap_content"
+              style="@style/Txt20Orangeff8b23"
+              android:textStyle="bold"
+              android:text="积极型"
+              >
+          </TextView>
+      </LinearLayout>
+        
+        <TextView
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" 
+            android:text="(如投资者胃填写，将由单位负责人以司代为统计总分及确认风险等级)" />
+        
+    </LinearLayout>
+
+</LinearLayout>

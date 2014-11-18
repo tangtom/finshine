@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_market_back"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            style="@style/Txt16Whiteffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="新客户交易"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="35dp"
+            android:paddingRight="25dp" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您好，新客户的姓名是？" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+           <EditText
+                android:id="@+id/editCustomName"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_add_invester"
+                android:maxLength="30"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                 />
+        </LinearLayout>
+
+         <Button
+            android:id="@+id/btn_ensure"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="确定"
+        />
+    </LinearLayout>
+
+</LinearLayout>

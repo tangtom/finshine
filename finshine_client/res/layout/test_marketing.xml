@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnQueryBind"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="客户营销接口列表" />
+    <Button
+        android:id="@+id/btnPhoto"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="上传头像" />
+    
+    <EditText
+        android:digits="1234567890"
+        android:id="@+id/etSmsVerfication"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:hint="请输入手机号码接收短信验证码" />
+
+    <LinearLayout
+        android:id="@+id/lt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/lt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/lt3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnQueryBind"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="查询绑定协议" />
+
+        <Button
+            android:id="@+id/btnUploadBind"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="上传绑定附件" />
+
+        <Button
+            android:id="@+id/btnSubmitBind"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="提交绑定协议" />
+
+        <Button
+            android:id="@+id/btnSms"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="短信验证" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnCreateOrder"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="创建订单" />
+
+        <Button
+            android:id="@+id/btnGetContract"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="查询合同信息" />
+
+        <Button
+            android:id="@+id/btnGetSalesOrder"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="上传合同附件" />
+
+        <Button
+            android:id="@+id/btnGetCustomerMarketing"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="提交订单" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="下载附件" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnSms"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="查询销售统计" />
+
+        <Button
+            android:id="@+id/btnCreateOrder"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="查询历史订单" />
+
+        <Button
+            android:id="@+id/btnGetSalesOrder"
+            style="@style/Txt20Brownd7c093"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="查询到期客户" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_find_target_customer_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_corner"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:singleLine="true"
+            android:text="预约份额"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvProdName"
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="银子企联18" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/ic_zhuan" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/ic_zhuan" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_zhuan" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_3"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_totalmoney"
+                style="@style/Txt18Gray808080"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="共预约20份，200万元"
+                android:visibility="gone" />
+
+            <LinearLayout
+                 
+                android:id="@+id/lt_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_appoint_amount"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_common_radiusbtn"
+                    android:digits="0123456789"
+                    android:ellipsize="end"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入份数"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:minWidth="160dp"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="万份" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_per_share_money"
+                style="@style/Txt16Gray808080"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="一份 = 9.5 万" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ltbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/btn_ok" />
+
+            <Button
+                android:id="@+id/btn_cancle"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/btn_cancle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="确定"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

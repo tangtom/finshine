@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white_ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="专项资产管理计划传真交易协议书"
+                android:textColor="#D7C093"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="甲方：" />
+
+                <TextView
+                    android:id="@+id/txtFirstParty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="张中华"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="乙方：" />
+
+                <TextView
+                    android:id="@+id/txtSecondParty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="phone"
+                    android:text="*********公司"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="委托服务传真：" />
+
+                <TextView
+                    android:id="@+id/fax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1346565"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="传真确认电话：" />
+
+                <TextView
+                    android:id="@+id/faxPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="132 4540 1781"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮寄地址：" />
+
+                <TextView
+                    android:id="@+id/txtExpressAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="上海市浦东新区花园石桥路 33 号 花旗集团大厦 3606室"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+
+                <TextView
+                    style="@style/TextGary838383"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="邮编：" />
+
+                <TextView
+                    android:id="@+id/txtPostCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="213200"
+                    android:textColor="@color/text_orange_ff8b23"
+                    android:textSize="16dp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+             android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:text="根据国家有关法律、法规的规定及乙方有关业务规则，为便于甲方在乙方直销中心办理专户
+                相关业务，甲乙双方本着安全谨慎、平等合作的原则，经过友好协商，就传真协议申请达成如下协议：" />
+            
+            <TextView
+                android:id="@+id/txtContent"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:maxLines="6"
+                android:text="第一条      传真交易业务范围" />
+
+            <TextView
+                android:id="@+id/txtFirstContent"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="1.*******************************************************************************************************************************************************************************************************************************************************************" />
+
+            <TextView
+                android:id="@+id/txtSecondContent"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="2.*******************************************************************************************************************************************************************************************************************************************************************" />
+
+            <TextView
+                android:id="@+id/txtThirdContent"
+                style="@style/Txt16Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="3.*******************************************************************************************************************************************************************************************************************************************************************" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="35dip"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/notice_forward_del_pop_bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_goal_customer"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="@drawable/notice_more_btn_pop_selector"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="目标客户" />
+
+    <View
+        android:id="@+id/more_btn_seperator"
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:background="#c25c00" />
+
+    <Button
+        android:id="@+id/btn_saling"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="@drawable/notice_more_btn_pop_selector"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="销售实况" />
+    
+     <View
+        android:id="@+id/more_btn_seperator"
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:background="#c25c00" />
+
+    <Button
+        android:id="@+id/btn_share_money"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="@drawable/notice_more_btn_pop_selector"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="分红" />
+     <View
+        android:id="@+id/more_btn_seperator"
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:background="#c25c00" />
+
+    <Button
+        android:id="@+id/btn_collect"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:background="@drawable/notice_more_btn_pop_selector"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="收藏" />
+
+</LinearLayout>

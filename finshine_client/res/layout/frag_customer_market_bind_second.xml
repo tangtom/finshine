@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_rectangle_orange" />
+
+            <TextView
+                style="@style/Txt20Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="联系方式" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/etPhone"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_5corner_bg"
+                android:digits="1234567890"
+                android:hint="请输入手机号码"
+                android:maxLength="11"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnGetVerfication"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:text="获取验证码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验  证  码" />
+
+            <EditText
+                android:id="@+id/etSmsVaerfication"
+                style="@style/Txt18Gray808080"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_5corner_bg"
+                android:inputType="number"
+                android:digits="1234567890"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_rectangle_orange" />
+
+            <TextView
+                style="@style/Txt20Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="绑定协议签署" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/editBind"
+            style="@style/Txt20Gray808080"
+            android:layout_width="500dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_5corner_bg"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="绑定协议签署" />
+    </LinearLayout>
+
+</LinearLayout>

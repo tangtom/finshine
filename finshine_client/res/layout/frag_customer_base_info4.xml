@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cbi_contact_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="安全信息"
+           style="@style/Txt18Gray808080" 
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身 　份 　证："
+               style="@style/Txt18Gray808080" />
+
+            <!-- for bug 4837 liying -->
+            <TextView
+                android:id="@+id/textIDNumber"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text=""
+               style="@style/Txt18Gray808080"  />
+            <!-- for bug 4837 liying -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                />
+            <!-- for bug 4837 liying -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- for bug 4985 liying -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件有效期："
+                style="@style/Txt18Gray808080"  />
+            
+            <!-- for bug 4837 liying -->
+            <TextView
+                android:id="@+id/textPassportEntryTime"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+              style="@style/Txt18Gray808080"  />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

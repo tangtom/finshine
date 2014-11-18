@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/ivProdInfo1"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:clickable="false"
+        android:drawablePadding="10dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <com.custom.view.DeviceLinearLayout
+        android:id="@+id/lt_signal_select"
+        android:layout_width="60dip"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:minWidth="50dip" >
+
+        <CheckBox
+            android:id="@+id/cb_selete_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/common_check_box_select"
+            android:clickable="false"
+            android:focusable="false" />
+    </com.custom.view.DeviceLinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/imageBarTop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+             />
+
+        <ImageView
+            android:id="@+id/ivBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageBarTop"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="45dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_bind" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_textName"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张中华" />
+
+                <TextView
+                    android:id="@+id/tv_textAge"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="45岁" />
+
+                <TextView
+                    android:id="@+id/tv_textMarried"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已婚" />
+
+                <TextView
+                    android:id="@+id/tv_textJob"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="律师" />
+
+                <TextView
+                    android:id="@+id/tv_textJob"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="纪要：" />
+
+                <TextView
+                    android:id="@+id/tv_textRemark"
+                    style="@style/Txt16Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="律师事务所负责人" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_textInvestTimes"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已购同类产品：3次" />
+
+            <TextView
+                android:id="@+id/tv_textInvestCurrent"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="目前投资：2" />
+
+            <TextView
+                android:id="@+id/tv_textInvestProd"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="产品：60万" />
+
+            <TextView
+                android:id="@+id/tv_textInvestMax"
+                style="@style/Txt14Graybfbfbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="投资峰值：1000万" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMarket"
+        style="@style/CommonButtonRadiusBrownd"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right|center_vertical"
+        android:text="营销" />
+
+</LinearLayout>

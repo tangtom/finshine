@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.custom.view.DeviceLinearLayout
+            android:id="@+id/lt_signal_select"
+            android:layout_width="80dip"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:minWidth="50dip" >
+
+            <CheckBox
+                android:id="@+id/checkSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_radio_selected"
+                android:button="@null"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false" />
+        </com.custom.view.DeviceLinearLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="100dp" >
+
+            <ImageView
+                android:id="@+id/imageBarTop"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitXY"
+                 />
+
+            <ImageView
+                android:id="@+id/isBind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_bind" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textName"
+                    style="@style/Txt20Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张中华" />
+
+                <TextView
+                    android:id="@+id/textAge"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="45岁" />
+
+                <TextView
+                    android:id="@+id/textMarried"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="已婚" />
+
+                <TextView
+                    android:id="@+id/textJob"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="律师" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="纪要：" />
+
+                <TextView
+                    android:id="@+id/textRemark"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="律师事务所负责人" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资总额：" />
+
+                <TextView
+                    android:id="@+id/textInvestTotalAsserts"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="投资次数：" />
+
+                <TextView
+                    android:id="@+id/textInvestNumber"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="资产总额：" />
+
+                <TextView
+                    android:id="@+id/textInvestMax"
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500" />
+
+                <TextView
+                    style="@style/Txt14Graybfbfbf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万" />
+
+                <TextView
+                    android:id="@+id/textNewCustomer"
+                    style="@style/Txt14Orangeff8b23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="新客户" />
+
+                <TextView
+                    android:id="@+id/textEffectiveCustomer"
+                    style="@style/Txt14Brownd7c093"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="有效客户"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnShowItemBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="center"
+        android:src="@drawable/cs_mg_show_noamal" />
+
+    <!--
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="460dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageChance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chance" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonBrown"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:text="销售跟进" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonBrown"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:text="营销" />
+        </LinearLayout>
+    -->
+
+</RelativeLayout>

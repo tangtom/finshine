@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/bg_prod_manager_pop"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Txt16Whiteffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="分红" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSalesProd"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|left"
+            android:text="[基金]引起中英（188）" />
+        <TextView
+            android:id="@+id/tvSalesStatus"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|right"
+            android:text="已成交2人，营销中3人" />
+
+        
+    </LinearLayout>
+    <ListView 
+          android:layout_margin="8dp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/list_salereal"
+          android:fadingEdge="none"
+          android:divider="@null"
+          android:scrollbars="none"
+        /> 
+</LinearLayout>

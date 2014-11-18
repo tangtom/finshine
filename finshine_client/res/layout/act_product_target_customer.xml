@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lt_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/product_outside_line"
+            android:gravity="left"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="240dp"
+            android:text="筛选"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/input_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/product_outside_line"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search_text"
+                style="@style/Txt14Gray808080"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="@string/search_customer_name"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_search_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_manager_filter_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户类型" />
+
+                <Spinner
+                    android:id="@+id/spinnerCustom"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/custom_status"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="客户有效性" />
+
+                <Spinner
+                    android:id="@+id/spinnerEffectiveness"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/effectiveness_status"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="销售机会" />
+
+                <Spinner
+                    android:id="@+id/spinnerSaleChance"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/sale_chance"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="城　　市" />
+
+                <!-- <Spinner -->
+                <!-- android:id="@+id/spinnerProvince" -->
+                <!-- android:layout_width="100dp" -->
+                <!-- android:layout_height="40dp" -->
+                <!-- android:background="@drawable/bg_spninner" -->
+                <!-- android:visibility="gone" /> -->
+
+                <Button
+                    android:id="@+id/btnCity"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期限偏好" />
+
+                <Button
+                    android:id="@+id/btnDeadline"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="发行商偏好" />
+
+                <Spinner
+                    android:id="@+id/spinnerPublisher"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/publisher_status"
+                    android:padding="5dp" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="收益偏好" />
+
+                <Button
+                    android:id="@+id/btnProfit"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部" />
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="分红偏好" />
+
+                <Button
+                    android:id="@+id/btnDividend"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spninner"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资偏好" />
+
+                <Button
+                    android:id="@+id/btnInvestment1"
+                    style="@style/Txt18Gray808080"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_spninner"
+                    android:entries="@array/investment1_status"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="全部" />
+
+                <!--
+                <Spinner
+                    android:id="@+id/spinnerInvestment2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_spninner" />
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:text="重置条件" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    style="@style/CommonButtonRadiusBrownd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="搜索" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_manager_filter_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户类型" />
+
+            <Spinner
+                android:id="@+id/spinnerCustom"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/custom_status"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="客户有效性" />
+
+            <Spinner
+                android:id="@+id/spinnerEffectiveness"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/effectiveness_status"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="销售机会" />
+
+            <Spinner
+                android:id="@+id/spinnerSaleChance"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/sale_chance"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="城　　市" />
+
+            <!-- <Spinner -->
+            <!-- android:id="@+id/spinnerProvince" -->
+            <!-- android:layout_width="100dp" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:background="@drawable/bg_spninner" -->
+            <!-- android:visibility="gone" /> -->
+
+            <Button
+                android:id="@+id/btnCity"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期限偏好" />
+
+            <Button
+                android:id="@+id/btnDeadline"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="发行商偏好" />
+
+            <Spinner
+                android:id="@+id/spinnerPublisher"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/publisher_status"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="收益偏好" />
+
+            <Button
+                android:id="@+id/btnProfit"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="分红偏好" />
+
+            <Button
+                android:id="@+id/btnDividend"
+                style="@style/Txt18Gray808080"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spninner"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/Txt18Gray808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资偏好" />
+
+            <Button
+                android:id="@+id/btnInvestment1"
+                style="@style/Txt18Gray808080"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_spninner"
+                android:entries="@array/investment1_status"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="全部" />
+
+            <!--
+                <Spinner
+                    android:id="@+id/spinnerInvestment2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_spninner" />            -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonReset"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="重置条件" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="搜索" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_checkall"
+            style="@style/Txt18Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/common_check_box_select"
+            android:checked="false"
+            android:drawablePadding="20dp"
+            android:focusable="false"
+            android:text="全选/取消全选" />
+
+        <TextView
+            android:id="@+id/tv_selected_customer"
+            style="@style/Txt18Brownd7c093"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/cb_checkall"
+            android:text="已选择5个客户" />
+
+        <Button
+            android:id="@+id/btn_sure_add_customer"
+            style="@style/CommonButtonRadiusBrownd"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="确认添加" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_gray_c5ccd2"
+        android:dividerHeight="@dimen/line"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

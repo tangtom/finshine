@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_prod_manager_pop"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Txt16Whiteffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="分红" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Txt16Gray808080"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="以下客户将获得分红：" />
+
+          <Button
+                android:id="@+id/btn_send_emali"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/email_all_text" />
+
+            <Button
+                android:id="@+id/btn_send_sms"
+                style="@style/CommonButtonRadiusBrownd"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/message_all_text" />
+    </LinearLayout>
+    <GridView 
+          android:layout_margin="8dp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/gridViewSm"
+          android:stretchMode="spacingWidth"
+          android:numColumns="3"
+          android:scrollbars="none"
+          android:columnWidth="80dp"
+          android:horizontalSpacing="15dp"
+          android:verticalSpacing="10dp"
+        /> 
+</LinearLayout>
